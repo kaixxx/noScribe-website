@@ -1,0 +1,27 @@
+{{- $title := partial "docs/html-head-title" . -}}
+{{- $description := or .Params.description .Description .Summary .Site.Params.siteDescription | plainify | htmlUnescape -}}
+{{- $url := .Permalink -}}
+{{- $image := "" -}}
+{{- with .Params.image -}}
+  {{- $image = . | absURL -}}
+{{- else -}}
+  {{- with .Site.Params.OgImage -}}
+    {{- $image = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{- if $image -}}
+<meta property="og:image" content="{{ $image }}">
+{{- end }}
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- if $image -}}
+<meta name="twitter:image" content="{{ $image }}">
+{{- end }}

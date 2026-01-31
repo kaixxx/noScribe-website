@@ -1,0 +1,96 @@
+
+body {
+  position: relative;
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+a.book-btn[href] {
+  color: #e66a00;
+  border-color: #e66a00;
+}
+
+a.book-btn[href]:hover {
+  color: #b95100;
+  border-color: #b95100;
+}
+
+.book-header {
+  margin-bottom: 1rem;
+}
+
+.book-header.hidden {
+  display: block;
+  height: 0;
+  margin: 0;
+}
+
+.book-header .ns-header {
+  padding: 0.25rem 0;
+}
+
+.book-page {
+  padding-top: 6.5rem;
+}
+
+.book-menu .book-menu-content {
+  padding-top: 5.7rem;
+}
+
+.book-page,
+.book-menu,
+.book-toc,
+.book-footer {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(420px, 60vw, 1400px);
+  height: auto;
+  aspect-ratio: 2316 / 297;
+  background-image: url("/img/graphic_sw.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.book-brand span {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #e66a00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: #2B2B2B;
+    --body-background-tint: none;
+    --body-font-color: #f2f2f2;
+    --gray-100: #3a3a3a;
+    --gray-200: #4a4a4a;
+    --gray-500: #9aa0a6;
+    --icon-filter: brightness(0) invert(1);
+  }
+
+  .book-search input {
+    background: #3a3a3a;
+    color: #f2f2f2;
+    border-color: #4a4a4a;
+  }
+
+  body::before {
+    background-image: url("/img/graphic_sw.png");
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body::before {
+    background-image: url("/img/graphic_swl.png");
+  }
+}

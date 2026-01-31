@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de-DE" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+noScribe custom head
+--><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Using custom Whisper models in noScribe (short summary).">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Custom Models (Whisper) | noScribe">
+<meta property="og:description" content="Using custom Whisper models in noScribe (short summary).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/en/docs/custom-models/">
+<meta property="og:site_name" content="noScribe"><meta property="og:image" content="http://localhost:1313/img/graphic_sw.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Custom Models (Whisper) | noScribe">
+<meta name="twitter:description" content="Using custom Whisper models in noScribe (short summary)."><meta name="twitter:image" content="http://localhost:1313/img/graphic_sw.png">
+
+<script type="application/ld+json">"{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"applicationCategory\":\"MultimediaApplication\",\"author\":{\"@type\":\"Person\",\"name\":\"Kai Dröge\",\"url\":\"https://github.com/kaixxx\"},\"codeRepository\":\"https://github.com/kaixxx/noScribe\",\"description\":\"Using custom Whisper models in noScribe (short summary).\",\"inLanguage\":\"de-DE\",\"isAccessibleForFree\":true,\"license\":\"GPL-3.0\",\"name\":\"noScribe\",\"offers\":{\"@type\":\"Offer\",\"availability\":\"https://schema.org/InStock\",\"price\":\"0\",\"priceCurrency\":\"EUR\"},\"operatingSystem\":[\"Windows\",\"macOS\",\"Linux\"],\"sameAs\":[\"https://github.com/kaixxx\"],\"url\":\"http://localhost:1313/\"}"</script>
+
+
+<title>Custom Models (Whisper) | noScribe</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/en/docs/custom-models/"><link rel="alternate" hreflang="de" href="http://localhost:1313/en/docs/custom-models/" title="Custom Models (Whisper)"><link rel="alternate" hreflang="de" href="http://localhost:1313/en/docs/custom-models/" title="Custom Models (Whisper)"><link rel="alternate" hreflang="x-default" href="http://localhost:1313/en/docs/custom-models/">
+<link rel="stylesheet" href="/book.min.b5e666c45196da9b2b94a449f0f6b242fcff77c4df33118224b9e7d39b702bcb.css" integrity="sha256-teZmxFGW2psrlKRJ8PayQvz/d8TfMxGCJLnn05twK8s=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/de.search.min.bb664c8b63ec69b6144e3aea0b72f818d2c5e5ecec110a05eaf2aa343d49a428.js" integrity="sha256-u2ZMi2PsabYUTjrqC3L4GNLF5ezsEQoF6vKqND1JpCg=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/en/docs/custom-models/index.xml" title="noScribe" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-section book-type-en">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>noScribe</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Suche"
+    aria-label="Suche"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex">
+      <a role="button">
+        <img src="/icons/translate.svg" class="book-icon" alt="Languages" />
+        Deutsch
+      </a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/en/" class="flex flex-auto">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getting-started/" class="">
+      Erste Schritte</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/features/" class="">
+      Funktionen &amp; Einsatzbereiche</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/custom-models/" class="">
+      Eigene Modelle (Whisper)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faq/" class="">
+      FAQ</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/about/" class="">
+      Über das Projekt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/mentions/" class="">
+      Erwähnungen / Presse</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/legal/" class="">
+      Impressum &amp; Datenschutz</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="custom-models-whisper">Custom Models (Whisper)<a class="anchor" href="#custom-models-whisper">#</a></h1>
+<p>This page summarizes the guide for adding custom Whisper models. For the latest details, see the source below.</p>
+<h2 id="quick-steps">Quick steps<a class="anchor" href="#quick-steps">#</a></h2>
+<ol>
+<li>In noScribe, open <strong>Model &gt; Add AI model&hellip;</strong> to open the model folder.</li>
+<li>Create <strong>one subfolder per model</strong>. The folder name becomes the model name in the UI.</li>
+<li><strong>Only Faster-Whisper/CTranslate2 models</strong> are supported. OpenAI-format models must be converted first.</li>
+<li>Put the model files in the subfolder (typically: <code>config.json</code>, <code>model.bin</code>, <code>preprocessor_config.json</code>, <code>tokenizer.json</code>, <code>vocabulary.json</code>). The model should then appear in noScribe.</li>
+</ol>
+<h2 id="paths">Paths<a class="anchor" href="#paths">#</a></h2>
+<ul>
+<li><strong>Windows:</strong> <code>C:\Users\&lt;username&gt;\AppData\Local\noScribe\noScribe\whisper_models\</code></li>
+<li><strong>macOS:</strong> <code>~/Library/Application Support/noscribe/whisper_models/</code></li>
+<li><strong>Linux:</strong> TODO: add Linux path.</li>
+</ul>
+<h2 id="model-sources">Model sources<a class="anchor" href="#model-sources">#</a></h2>
+<ul>
+<li>Faster-Whisper models (Systran), including Whisper v2</li>
+<li>Language-specific models (e.g., French or German)</li>
+<li>If filenames include a <code>ctranslate2_</code> prefix, remove it (e.g., <code>ctranslate2_vocabulary.json</code> → <code>vocabulary.json</code>).</li>
+<li>The German model additionally requires <code>tokenizer.json</code> from the original Whisper v3 repository.</li>
+</ul>
+<h2 id="source">Source<a class="anchor" href="#source">#</a></h2>
+<p><a href="https://github.com/kaixxx/noScribe/wiki/Add-custom-Whisper-models-for-transcription">https://github.com/kaixxx/noScribe/wiki/Add-custom-Whisper-models-for-transcription</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

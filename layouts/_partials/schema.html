@@ -1,0 +1,18 @@
+{{- $description := or .Params.description .Site.Params.siteDescription | plainify | htmlUnescape -}}
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "SoftwareApplication"
+  "name" "noScribe"
+  "description" $description
+  "applicationCategory" "MultimediaApplication"
+  "operatingSystem" (slice "Windows" "macOS" "Linux")
+  "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "EUR" "availability" "https://schema.org/InStock")
+  "license" "GPL-3.0"
+  "isAccessibleForFree" true
+  "codeRepository" "https://github.com/kaixxx/noScribe"
+  "author" (dict "@type" "Person" "name" "Kai Dröge" "url" "https://github.com/kaixxx")
+  "sameAs" (slice "https://github.com/kaixxx")
+  "url" .Site.BaseURL
+  "inLanguage" (or .Site.Language.LanguageCode .Site.Language.Lang)
+-}}
+<script type="application/ld+json">{{ $data | jsonify }}</script>
