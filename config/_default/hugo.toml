@@ -22,6 +22,8 @@ enableRobotsTXT = false
   filename = "sitemap.xml"
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3
@@ -41,10 +43,4 @@ enableRobotsTXT = false
     languageName = "Deutsch"
     languageCode = "de-DE"
     weight = 1
-    title = "noScribe"
-
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-US"
-    weight = 2
     title = "noScribe"

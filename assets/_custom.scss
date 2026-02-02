@@ -33,7 +33,7 @@ a.book-btn[href]:hover {
 }
 
 .book-menu .book-menu-content {
-  padding-top: 5.7rem;
+  padding-top: 5.5rem;
 }
 
 .book-page,
@@ -69,13 +69,16 @@ body::before {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-background: #2B2B2B;
+    --body-background: #1a1a1a;
     --body-background-tint: none;
     --body-font-color: #f2f2f2;
+    --body-heading-color: #cfcccc;
     --gray-100: #3a3a3a;
     --gray-200: #4a4a4a;
     --gray-500: #9aa0a6;
     --icon-filter: brightness(0) invert(1);
+    --color-link: #63b3f2;
+    --color-visited-link: #b5d6f0;
   }
 
   .book-search input {
@@ -90,7 +93,22 @@ body::before {
 }
 
 @media (prefers-color-scheme: light) {
+  :root {
+    --color-link: #144870;
+    --color-visited-link: #1f6aa5;
+  }
+
   body::before {
     background-image: url("/img/graphic_swl.png");
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  color: var(--body-heading-color);
 }

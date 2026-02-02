@@ -7,7 +7,9 @@ $ErrorActionPreference = "Stop"
 $destDir = "static\\img"
 $files = @(
   "img\\noScribe_main_window.png",
-  "img\\noScribe_Editor.png"
+  "img\\noScribe_Editor.png",
+  "img\\noScribe_settings.png",
+  "img\\queue.png"
 )
 
 foreach ($rel in $files) {
