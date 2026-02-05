@@ -140,3 +140,8 @@ h6 {
 .book-menu-toc nav a::before {
   content: "> ";
 }
+
+.markdown ul li + li,
+.markdown ol li + li {
+  margin-top: 0.35rem;
+}
