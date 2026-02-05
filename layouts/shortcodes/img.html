@@ -1,0 +1,16 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $title := .Get "title" -}}
+{{- $class := .Get "class" -}}
+{{- $style := .Get "style" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $loading := .Get "loading" -}}
+<img src="{{ $src | relURL }}" alt="{{ $alt }}"
+{{- with $title }} title="{{ . }}"{{- end }}
+{{- with $class }} class="{{ . }}"{{- end }}
+{{- with $style }} style="{{ . }}"{{- end }}
+{{- with $width }} width="{{ . }}"{{- end }}
+{{- with $height }} height="{{ . }}"{{- end }}
+{{- with $loading }} loading="{{ . }}"{{- end }}
+/>

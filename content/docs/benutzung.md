@@ -8,7 +8,7 @@ weight: 20
 
 ## Einstellungen
 
-<img src="/img/noScribe_settings.png" alt="noScribe Einstellungen" style="width: 20em; height: auto; float: left; margin: 0 1.5rem 1rem 0;">
+{{< img src="img/noScribe_settings.png" alt="noScribe Einstellungen" style="width: 20em; height: auto; float: left; margin: 0 1.5rem 1rem 0;" >}}
 
 - **Audiodatei wählen:** Unterstützt werden nahezu alle Audio‑ und Videoformate. Im Dialog können auch mehrere Dateien gewählt werden. Diese werden dann nacheinander abgearbeitet. 
 - **Transkript speichern unter:** Standard ist `.html` (kompatibel mit dem Editor). Optional `.txt` für Klartext oder `.vtt` für Untertitel sowie die Weiterarbeit in [EXMARaLDA](https://exmaralda.org/). Wenn mehrere Dateien auf einmal verarbeitet werden, kann hier nur der Ausgabeordner gewählt werden. Die Benennung der Ausgabedateien erfolgt dann automatisch.  
@@ -26,7 +26,7 @@ weight: 20
 
 ## Warteschlange
 
-![Ansicht Warteschlange](/img/queue.png)
+{{< img src="img/queue.png" alt="Ansicht Warteschlange" >}}
 
 Der Tab „Warteschlange“ zeigt eine Liste aller Aufträge in der aktuellen Sitzung, ihren aktuellen Status und Fortschritt. Die Aufträge werden einer nach dem anderen abgearbeitet.  
 
@@ -42,7 +42,7 @@ Mit dem „Abbrechen“ Button unten rechts kann die gesamte Warteschlange beend
 
 Der Editor ist ein wichtiger Bestandteil von noScribe. Er dient zur Kontrolle und Korrektur der Transkripte. Das ist auch bei den besten KI-Modellen leider immer noch dringend erforderlich. 
 
-![noScribe Editor](/img/noScribe_Editor.png)
+{{< img src="img/noScribe_Editor.png" alt="noScribe Editor" >}}
 
 Die wichtigste Funktion: **Ctrl+Space** (Mac: `^Space`) oder der **orangene Button** starten das Audio an der aktuellen Cursorposition. Die Textauswahl folgt der Audioaufnahme. Zum Editieren einfach an beliebiger Stelle in den Text klicken oder mit den Pfeiltasten navigieren.
 

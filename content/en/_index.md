@@ -23,9 +23,9 @@ noScribe is an open-source transcription app for interviews, qualitative researc
 ## Screenshots
 
 {{% columns ratio="1:1" %}}
-- ![noScribe main window](/img/noScribe_main_window.png)
+- {{< img src="img/noScribe_main_window.png" alt="noScribe main window" >}}
 
-- ![noScribe editor](/img/noScribe_Editor.png)
+- {{< img src="img/noScribe_Editor.png" alt="noScribe editor" >}}
 {{% /columns %}}
 
 ## Privacy by design

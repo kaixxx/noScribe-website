@@ -23,7 +23,7 @@ Achtung: Jemand hat die Domain noscribe(punkt)ai registriert und versucht dort, 
 
 Ursprünglich vor allem für die qualitative Sozialforschung entwickelt, wird noScribe heute überall dort eingesetzt, wo wir es mit besonders sensiblen Audiodaten zu tun haben - im Journalismus, in der Medizin, bei Behörden und NGOs. NoScribe wird von [Universitäten](https://sozmethode.hypotheses.org/2315) und [Hochschulen](https://kbss.site.phbern.ch/db/noscribe) empfohlen, vom [Computermagazin c't](https://www.heise.de/select/ct/2025/2/2433207582191637980), sowie in [Fachpublikationen für Journalist:innen](https://www.journalistin.at/singlenews/uid-968002/nie-wieder-abtippen-profitipps-zum-transkribieren-mit-ki/).
 
-![noScribe Hauptfenster](/img/noScribe_main_window.png)
+{{< img src="img/noScribe_main_window.png" alt="noScribe Hauptfenster" >}}
 (Der Screenshot zeigt ein [Interview mit der exilrussischen Soziologin Natalia Savelyeva](https://www.youtube.com/watch?v=vOwajAbvPzQ&t=2018s), das ich im Mai 2022 geführt habe.)
 
 ## Wie nutze ich noScribe?
@@ -43,7 +43,7 @@ Das KI-Modell hinter noScribe kann auch Dialekte wie bspw. Schweizerdeutsch rech
 
 ## Wer steht hinter noScribe?
 
-<img src="/img/kd.png" alt="Kai Dröge" style="width: 8em; height: auto;">
+{{< img src="img/kd.png" alt="Kai Dröge" style="width: 8em; height: auto;" >}}
 
 **Dr. Kai Dröge**</br>Soziologe mit Informatik-Hintergrund, Forscher und Dozent
 
