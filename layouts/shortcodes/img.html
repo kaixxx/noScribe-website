@@ -9,7 +9,7 @@
 <img src="{{ $src | relURL }}" alt="{{ $alt }}"
 {{- with $title }} title="{{ . }}"{{- end }}
 {{- with $class }} class="{{ . }}"{{- end }}
-{{- with $style }} style="{{ . }}"{{- end }}
+{{- with $style }} style="{{ . | safeCSS }}"{{- end }}
 {{- with $width }} width="{{ . }}"{{- end }}
 {{- with $height }} height="{{ . }}"{{- end }}
 {{- with $loading }} loading="{{ . }}"{{- end }}
