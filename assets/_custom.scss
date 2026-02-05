@@ -1,4 +1,21 @@
 
+:root {
+  --font-size: 1.1rem;
+  --font-size-smaller: 0.95rem;
+}
+
+.container {
+  max-width: 72rem;
+}
+
+@media screen and (min-width: 72rem) {
+  .book-page,
+  .book-menu .book-menu-content,
+  .book-toc .book-toc-content {
+    padding: 2rem 1rem;
+  }
+}
+
 body {
   position: relative;
   font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
