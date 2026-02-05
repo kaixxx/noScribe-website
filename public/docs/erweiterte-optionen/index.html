@@ -25,7 +25,7 @@ noScribe custom head
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/docs/erweiterte-optionen/"><link rel="alternate" hreflang="de" href="http://localhost:1313/docs/erweiterte-optionen/" title="Erweiterte Optionen"><link rel="alternate" hreflang="de" href="http://localhost:1313/docs/erweiterte-optionen/" title="Erweiterte Optionen"><link rel="alternate" hreflang="x-default" href="http://localhost:1313/docs/erweiterte-optionen/">
-<link rel="stylesheet" href="/book.min.050ae6299c31db4c5aabb9652c3c62b0090504e0d45d3d96fefac925cc8cd3b1.css" integrity="sha256-BQrmKZwx20xaq7llLDxisAkFBODUXT2W/vrJJcyM07E=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.da911a3c10e0ca26a76cf1669b8ebf5027d7560d67f9bbd7502fc8477f6d438d.css" integrity="sha256-2pEaPBDgyianbPFmm46/UCfXVg1n&#43;bvXUC/IR39tQ40=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/de.search.min.4d79453732c1743b2ddece257805784b580a616713718097356a7b80411639a4.js" integrity="sha256-TXlFNzLBdDst3s4leAV4S1gKYWcTcYCXNWp7gEEWOaQ=" crossorigin="anonymous"></script>
 
@@ -82,6 +82,8 @@ noScribe custom head
       Download und Installation</a>
   
 
+  
+
         </li>
       
     
@@ -94,6 +96,8 @@ noScribe custom head
   
     <a href="/docs/benutzung/" class="">
       Benutzung</a>
+  
+
   
 
         </li>
@@ -110,6 +114,32 @@ noScribe custom head
       Erweiterte Optionen</a>
   
 
+  
+    
+  
+  
+    
+    
+    <div class="book-menu-toc">
+      <nav class="book-menu-toc-list">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#skripting">Skripting</a></li>
+        <li><a href="#konfiguration">Konfiguration</a></li>
+        <li><a href="#logs">Logs</a></li>
+      </ul>
+    </li>
+    <li><a href="#spezielle-transkriptionsmodelle-nutzen">Spezielle Transkriptionsmodelle nutzen</a></li>
+    <li><a href="#development-and-contribution">Development and Contribution</a>
+    </li>
+  </ul>
+</nav>
+    </div>
+  
+
+  
+
         </li>
       
     
@@ -122,6 +152,8 @@ noScribe custom head
   
     <a href="/docs/faq/" class="">
       FAQ</a>
+  
+
   
 
         </li>
@@ -138,6 +170,8 @@ noScribe custom head
       Erwähnungen / Presse</a>
   
 
+  
+
         </li>
       
     
@@ -152,10 +186,15 @@ noScribe custom head
       Impressum &amp; Datenschutz</a>
   
 
+  
+
         </li>
       
     
   </ul>
+
+
+
 
 
 
@@ -195,40 +234,41 @@ noScribe custom head
       
       
   <article class="markdown book-article"><h1 id="erweiterte-optionen">Erweiterte Optionen<a class="anchor" href="#erweiterte-optionen">#</a></h1>
-<h2 id="advanced-options">Advanced Options<a class="anchor" href="#advanced-options">#</a></h2>
-<ul>
-<li><strong>CLI‑Modus:</strong> <code>noScribe.exe --help</code> zeigt Optionen; <code>--no-gui</code> ist für Skripting geeignet.</li>
-<li><strong>Konfiguration:</strong> Nach dem ersten Start liegt <code>config.yml</code> im Benutzerprofil:
+<h3 id="skripting">Skripting<a class="anchor" href="#skripting">#</a></h3>
+<p>Seit Version 0.7 hat noScribe auch ein Kommandozeileninterface und kann so in eigene Skripte eingebunden werden. <code>noScribe.exe --help</code> zeigt die verfügbaren Optionen. Mit der Option <code>--no-gui</code> wird das Hauptfenster unterdrückt und noScribe läuft vollständig im Kommandozeilenmodus.</p>
+<h3 id="konfiguration">Konfiguration<a class="anchor" href="#konfiguration">#</a></h3>
+<p>Nach dem ersten Start liegt die Datei <code>config.yml</code> im Benutzer:innenprofil:</p>
 <ul>
 <li>Windows: <code>C:\Users\&lt;username&gt;\AppData\Local\noScribe\noScribe\config.yml</code></li>
 <li>macOS: <code>~/Library/Application Support/noscribe/config.yml</code></li>
-<li>Linux: <code>~/.config/noScribe/config.yml</code>
-Dort lassen sich u. a. UI‑Sprache und Modellparameter anpassen.</li>
+<li>Linux: <code>~/.config/noScribe/config.yml</code></li>
 </ul>
-</li>
-<li><strong>Logs:</strong> Im gleichen Profilverzeichnis existiert ein Ordner <code>log</code> mit detaillierten Transkript‑Logs.</li>
-</ul>
-<h2 id="eigene-modelle-whisper">Eigene Modelle (Whisper)<a class="anchor" href="#eigene-modelle-whisper">#</a></h2>
-<p>Kurzfassung der Schritte:</p>
+<p>Dort lassen sich u.a. die Sprache der Oberfläche und weitere Optionen anpassen. Achtung: Diese Datei nur bearbeiten, wenn noScribe nicht geöffnet ist. Sonst werden die Änderungen wieder überschrieben.</p>
+<h3 id="logs">Logs<a class="anchor" href="#logs">#</a></h3>
+<p>Im gleichen Profilverzeichnis existiert ein Ordner <code>log</code> mit detaillierten Informationen zu jedem Transkript - gut für die Fehlersuche.</p>
+<h2 id="spezielle-transkriptionsmodelle-nutzen">Spezielle Transkriptionsmodelle nutzen<a class="anchor" href="#spezielle-transkriptionsmodelle-nutzen">#</a></h2>
+<p>NoScribe kommt mit zwei Transkriptionsmodellen (precise/fast), die beide auf <em>Whisper V3 turbo</em> basieren. Es können aber auch andere Whisper-Modelle genutzt werden, die bspw. besser auf bestimmte Sprachen abgestimmt sind.</p>
+<p><strong>Installation:</strong></p>
 <ol>
-<li>In noScribe <strong>Model &gt; Add AI model&hellip;</strong> öffnen.</li>
-<li>Pro Modell einen <strong>eigenen Unterordner</strong> anlegen (Ordnername = Modellname im UI).</li>
-<li><strong>Nur Faster‑Whisper/CTranslate2‑Modelle</strong> werden unterstützt.</li>
-<li>Dateien in den Ordner legen (typisch: <code>config.json</code>, <code>model.bin</code>, <code>preprocessor_config.json</code>, <code>tokenizer.json</code>, <code>vocabulary.json</code>).</li>
+<li>In noScribe unter <em>Modell</em> die Liste aufklappen und <em>KI-Modelle hinzufügen</em> auswählen. Es öffnet sich der Ordner <code>whisper_models</code> im noScribe Konfigurationsordner (Pfade siehe oben).</li>
+<li>Pro Modell einen <em>eigenen Unterordner</em> anlegen. Der Name dieses Unterordners ist dann später auch der Modellname, der in noScribe angezeigt wird.</li>
+<li>Alle zu diesem Modell gehörenden Dateien in diesen Ordner legen (typisch: <code>config.json</code>, <code>model.bin</code>, <code>preprocessor_config.json</code>, <code>tokenizer.json</code>, <code>vocabulary.json</code>).</li>
+<li>Jetzt sollte das neue Modell als zusätzliche Auswahl in noScribe unter <em>Modelle</em> erscheinen.</li>
 </ol>
-<p>Pfade:</p>
+<p><strong>Hinweise:</strong></p>
 <ul>
-<li><strong>Windows:</strong> <code>C:\Users\&lt;username&gt;\AppData\Local\noScribe\noScribe\whisper_models\</code></li>
-<li><strong>macOS:</strong> <code>~/Library/Application Support/noscribe/whisper_models/</code></li>
-<li><strong>Linux:</strong> TODO: Pfad ergänzen.</li>
-</ul>
-<p>Hinweise:</p>
-<ul>
+<li>Es werden nur Modelle im <em>Faster‑Whisper</em> bzw. <em>CTranslate2</em>-Format unterstützt. Modelle im originalen Whisper-Format von OpenAI können <a href="https://github.com/SYSTRAN/faster-whisper?tab=readme-ov-file#model-conversion">konvertiert werden.</a></li>
 <li>Manche Downloads enthalten <code>ctranslate2_</code>‑Präfixe – diese entfernen (z. B. <code>ctranslate2_vocabulary.json</code> → <code>vocabulary.json</code>).</li>
-<li>Für das deutsche Modell wird zusätzlich <code>tokenizer.json</code> aus dem Whisper‑v3‑Repository benötigt.</li>
 </ul>
-<p>Quelle:
-<a href="https://github.com/kaixxx/noScribe/wiki/Add-custom-Whisper-models-for-transcription">https://github.com/kaixxx/noScribe/wiki/Add-custom-Whisper-models-for-transcription</a></p>
+<p><strong>Modelle:</strong></p>
+<ul>
+<li>Das <strong>offizielle Faster-Whisper-Repository</strong> (15 Modelle): <a href="https://huggingface.co/Systran">https://huggingface.co/Systran</a> Hier gibt es auch Whisper-v2-Modell, das bis zur Version 0.5 von noScribe Standard war und immer noch von einigen bevorzugt wird, auch wenn es deutlich langsamer ist. Die rein englischen Modelle (mit der Endung „.en“) sind ebenfalls interessant, da sie deutlich schneller laufen.</li>
+<li><strong>Eine für Französisch angepasste Version von Whisper V3</strong>: <a href="https://huggingface.co/bofenghuang/whisper-large-v3-french/tree/main/ctranslate2">https://huggingface.co/bofenghuang/whisper-large-v3-french/tree/main/ctranslate2</a> (Wenn die heruntergeladenen Dateien das Präfix „ctranslate2_“ haben, dieses bitte entfernen.</li>
+<li><strong>Eine für Deutsch optimierte Version von Whisper V3</strong> (meine Erfahrung: nur geringfügige Verbesserungen bei der Transkriptionsqualität, aber weniger Präzision bei der Pausenerkennung und der Identifizierung von überlappenden Sprachsequenzen): <a href="https://huggingface.co/aseifert/faster-whisper-large-v3-turbo-german/tree/main">https://huggingface.co/aseifert/faster-whisper-large-v3-turbo-german/tree/main</a> Sie benötigen außerdem die Datei <code>tokenizer.json</code> aus dem ursprünglichen Whisper V3-Repository: <a href="https://huggingface.co/Systran/faster-whisper-large-v3/tree/main">https://huggingface.co/Systran/faster-whisper-large-v3/tree/main</a></li>
+</ul>
+<p>Weitere Modelle findet man auf <a href="https://huggingface.co/">huggingface</a>. Suchen Sie nach „faster-whisper” und der gewünschten Sprache (oder nur nach „whisper”, um Modelle zu finden, die konvertiert werden können).</p>
+<p>Ich verwende diese Version von Whisper V3 Turbo als „präzises” Modell: <a href="https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo">https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo</a></p>
+<p><strong>Wenn Sie ein gutes neues Modell gefunden haben, teilen Sie es bitte in dieser Diskussion: <a href="https://github.com/kaixxx/noScribe/discussions/132">https://github.com/kaixxx/noScribe/discussions/132</a></strong>.</p>
 <h2 id="development-and-contribution">Development and Contribution<a class="anchor" href="#development-and-contribution">#</a></h2>
 <ul>
 <li>noScribe basiert auf Python 3.12.</li>

@@ -112,3 +112,14 @@ h6 {
   font-weight: inherit;
   color: var(--body-heading-color);
 }
+
+.book-menu-toc {
+  margin: 0.25rem 0 0.5rem 0.5rem;
+  font-size: var(--font-size-smallest);
+}
+.book-menu-toc nav a {
+  padding: 0.2em 0;
+}
+.book-menu-toc nav a::before {
+  content: "> ";
+}

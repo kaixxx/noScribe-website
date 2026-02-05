@@ -8,7 +8,8 @@ weight: 10
 
 **Aktuelle Version:** 0.7
 
-Alle Downloads liegen auf SWITCHdrive.ch, einer Datasharing-Plattform für Schweizer Hochschulen. Der Quellcode ist auf [GitHub](https://github.com/kaixxx/noScribe) verfügbar, auch für den [noScribe Editor](https://github.com/kaixxx/noScribeEditor).
+Alle Installationsdateien liegen auf SWITCHdrive.ch, einer sicheren Datasharing-Plattform für Schweizer Hochschulen. 
+Der Quellcode ist auf [GitHub](https://github.com/kaixxx/noScribe) verfügbar, auch für den [noScribe Editor](https://github.com/kaixxx/noScribeEditor).
 
 {{< button href="#windows" >}}Installation Windows{{< /button >}}
 {{< button href="#macos" >}}Installation macOS{{< /button >}}

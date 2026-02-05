@@ -8,6 +8,12 @@ bookToC: false
 
 Dies ist die offizielle Websseite der Open-Source-Software noScribe ([GitHub](https://github.com/kaixxx/noScribe)). 
 
+{{% hint warning %}} 
+Achtung: Jemand hat die Domain noscribe(punkt)ai registriert und versucht dort, kostenplfichtige Transkriptionsdienste zu verkaufen. Ich habe damit nichts zu tun. Das echte noScribe ist kostenlos und wird es immer bleiben. 
+{{% /hint %}}
+
+## Was ist noScribe?
+
 - **Kostenlos & frei verfügbar** ([GPL‑3.0](https://www.gnu.org/licenses/gpl-3.0.html))
 - **Keine Cloud**, alles bleibt auf dem eigenen Computer 
 - **Hochwertige Transkripte** basierend auf [Whisper von OpenAI](https://github.com/openai/whisper) und [Pyannote von Hervé Bredin](https://github.com/pyannote/pyannote-audio)
