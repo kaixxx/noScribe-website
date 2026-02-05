@@ -69,7 +69,7 @@ body::before {
   width: clamp(420px, 60vw, 1400px);
   height: auto;
   aspect-ratio: 2316 / 297;
-  background-image: url("{{ \"img/graphic_sw.png\" | relURL }}");
+  background-image: url("img/graphic_sw.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
@@ -105,7 +105,7 @@ body::before {
   }
 
   body::before {
-    background-image: url("{{ \"img/graphic_sw.png\" | relURL }}");
+    background-image: url("img/graphic_sw.png");
   }
 }
 
@@ -116,7 +116,7 @@ body::before {
   }
 
   body::before {
-    background-image: url("{{ \"img/graphic_swl.png\" | relURL }}");
+    background-image: url("img/graphic_swl.png");
   }
 }
 
