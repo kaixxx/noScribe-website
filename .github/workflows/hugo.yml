@@ -28,8 +28,11 @@ jobs:
         with:
           hugo-version: "0.146.0"
           extended: true
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
