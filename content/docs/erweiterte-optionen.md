@@ -52,16 +52,14 @@ Ich verwende diese Version von Whisper V3 Turbo als „präzises“ Modell: http
 **Wenn Sie ein gutes neues Modell gefunden haben, teilen Sie es bitte in dieser Diskussion: https://github.com/kaixxx/noScribe/discussions/132**.
 
 
-## Development and Contribution
+## Beteiligung an der Entwicklung
 
-- noScribe basiert auf Python 3.12.
-- Modell‑Dateien sind zu groß für GitHub; Hinweise liegen im `models`‑Ordner.
-- Tests, Bugreports und Pull Requests sind willkommen (sofern zeitlich möglich).
+- noScribe basiert auf Python 3.13.
+- Die KI-Modelle (Whisper) sind zu groß für GitHub. Sie müssen extra heruntergeladen werden, wenn noScribe vom Quellcode ausgeführt werden soll. Hinweise im `models`‑Ordner.
+- Tests, Bugreports und Pull Requests sind willkommen. Ich versuche zeitnah zu reagieren. Sonst gerne nochmal freundlich erinnern. Bitte haben Sie Verständnis, dass ich nicht jede Idee übernehmen kann.   
 
 ### Übersetzungen
 
-- Die UI ist in viele Sprachen übersetzt.
-- Einige Übersetzungen sind maschinell erstellt und können Fehler enthalten.
-- Sprachdateien befinden sich im Ordner `trans`.
-- Änderungen sollten die YAML‑Konventionen beachten.
-- UI‑Sprache über die Einstellung `locale` in `config.yml`.
+Die Bedienoberfläche ist in viele Sprachen übersetzt. Allerdings sind diese Übersetzungen teils maschinell erstellt und können Fehler enthalten. Korrekturen nehme ich gerne entgegen. 
+
+Die Sprachdateien befinden sich im Ordner `trans`. Änderungen sollten die YAML‑Konventionen beachten. Der Wechsel der UI‑Sprache erfolgt über die Einstellung `locale` in `config.yml`.
