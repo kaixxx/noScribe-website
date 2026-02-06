@@ -8,7 +8,7 @@ weight: 20
 
 ## Einstellungen
 
-{{< img src="img/noScribe_settings.png" alt="noScribe Einstellungen" style="width: 20em; height: auto; float: left; margin: 0 1.5rem 1rem 0;" >}}
+{{< img src="img/noScribe_settings.png" alt="noScribe Einstellungen" style="width: 17em; height: auto; float: left; margin: 0 1.5rem 1rem 0;" >}}
 
 - **Audiodatei wählen:** Unterstützt werden nahezu alle Audio‑ und Videoformate. Im Dialog können auch mehrere Dateien gewählt werden. Diese werden dann nacheinander abgearbeitet. 
 - **Transkript speichern unter:** Standard ist `.html` (kompatibel mit dem Editor). Optional `.txt` für Klartext oder `.vtt` für Untertitel sowie die Weiterarbeit in [EXMARaLDA](https://exmaralda.org/). Wenn mehrere Dateien auf einmal verarbeitet werden, kann hier nur der Ausgabeordner gewählt werden. Die Benennung der Ausgabedateien erfolgt dann automatisch.  

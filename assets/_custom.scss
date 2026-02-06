@@ -50,7 +50,7 @@ a.book-btn[href]:hover {
 }
 
 .book-menu .book-menu-content {
-  padding-top: 5.5rem;
+  padding-top: 5.9rem;
 }
 
 .book-page,
@@ -128,6 +128,18 @@ h5,
 h6 {
   font-weight: inherit;
   color: var(--body-heading-color);
+}
+
+.markdown h1 {
+  font-size: 2.3rem;
+}
+
+.markdown h2 {
+  font-size: 1.8rem;
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
 }
 
 .book-menu-toc {
