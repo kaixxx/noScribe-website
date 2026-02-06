@@ -45,3 +45,9 @@ enableRobotsTXT = false
     languageCode = "de-DE"
     weight = 1
     title = "noScribe"
+
+[menu]
+  [[menu.before]]
+    name = "Startseite"
+    pageRef = "/"
+    weight = 1

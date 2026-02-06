@@ -16,8 +16,8 @@ weight: 20
 - **Sprache:** Sprache auswählen oder „Auto“ zur Erkennung bzw. „Multilingual“ für mehrere Sprachen in derselben Aufnahme (experimentell).
 - **Qualität:** „Precise“ liefert die besten Ergebnisse und ist für fast alle Anwendungszwecke die beste Wahl. „Fast“ ist etwas schneller und vor allem für ältere Rechner gedacht. Es erfordert mehr Nachkorrektur.
 - **Pausen markieren:** Wenn gewählt, werden Sprechpausen als Punkte in Klammern markiert, jeweils ein Punkt pro Sekunde Pause. Optional ab 1/2/3 Sekunden.
-- **Sprechererkennung:** Wenn bekannt, Anzahl der Sprecher:innen wählen, das macht die Erkennung robuster. Ansonsten „Auto“ für die automatische Erkennung oder „None“, um diesen Schritt ganz zu überspringen.
-- **Überlappende Sprache:** Gleichzeitiges Sprechen wird mit `// Sprecher:in: Einwurf //` markiert (experimentell).
+- **Sprecher:in erkennen:** Wenn bekannt, Anzahl der Sprecher:innen wählen, das macht die Erkennung robuster. Ansonsten „Auto“ für die automatische Erkennung oder „None“, um diesen Schritt ganz zu überspringen.
+- **Überlappende Sprache:** Gleichzeitiges Sprechen wird mit `// Sprecher:in: Text des Einwurfs //` markiert (experimentell).
 - **Füllworte:** Wenn gewählt, werden Füllwörter und unvollständige Worte/Sätze nach Möglichkeit mittranskribiert, sonst nicht. Achtung: Dies ist eher eine 'Empfehlung' an das KI-Modell, kein harter Ja/Nein-Schalter. 
 - **Zeitstempel:** Fügt einen Zeitstempel im Format `[hh:mm:ss]` alle 60 Sekunden oder bei Sprecher:innenwechsel in den Text ein (gut für MAXQDA).
 - **Start** beginnt den Transkriptionsprozess. Wenn bereits ein Prozess läuft, können trotzdem neue in Auftrag gegeben werden. Diese werden dann in die [Warteschlange](#warteschlange) eingereiht und erledigt, sobald sie an der Reihe sind.   

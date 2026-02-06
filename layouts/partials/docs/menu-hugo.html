@@ -1,0 +1,69 @@
+<!--
+  This is template for hugo menus, accepts Page and Menu as context
+  https://gohugo.io/variables/menus/
+-->
+{{- if .Menu -}}
+  {{- template "book-menu-hugo" . -}}
+{{- end -}}
+
+{{ define "book-menu-hugo" }}
+<ul>
+{{- range .Menu -}}
+  {{- $class := slice -}}
+  {{- with .Params.class -}}
+    {{- $class = $class | append . -}}
+  {{- end -}}
+  {{- $isRemote := (urls.Parse .URL).IsAbs -}}
+  {{- $menuURL := .URL -}}
+  {{- if not $isRemote -}}
+    {{- $menuURL = relURL $menuURL -}}
+  {{- end -}}
+  {{- $menuURL = strings.TrimSuffix "/" $menuURL -}}
+  {{- $pageURL := strings.TrimSuffix "/" $.Page.RelPermalink -}}
+  {{- $isCurrent := or
+      ($.Page.IsMenuCurrent .Menu .)
+      ($.Page.HasMenuCurrent .Menu .)
+      (and .Page (eq $.Page.RelPermalink .Page.RelPermalink))
+      (eq $menuURL $pageURL)
+      (and $.Page.IsHome (eq $menuURL ""))
+  -}}
+  {{- if $isCurrent -}}
+    {{- $class = $class | append "active" -}}
+  {{- end -}}
+  <li>
+    <a href="{{ .URL }}"
+      {{- with $class }} class="{{ delimit . " " }}"{{- end -}}
+      {{- with .Title }} title="{{ . }}"{{- end -}}
+      {{- if $isRemote }} target="_blank" rel="noopener"{{- end -}}>
+      {{- .Pre -}}
+      {{- template "book-menu-title" . -}}
+      {{- .Post -}}
+    </a>
+    {{- with .Children -}}
+      {{- template "book-menu-hugo" (dict "Page" $.Page "Menu" .) -}}
+    {{- end -}}
+    {{- if and $isCurrent $.Page.Content -}}
+      {{- $toc := $.Page.TableOfContents -}}
+      {{- if and (ne .Page.Params.bookToC false) (ne $toc "<nav id=\"TableOfContents\"></nav>") -}}
+        {{- $toc = replace $toc "id=\"TableOfContents\"" "class=\"book-menu-toc-list\"" -}}
+        {{- $toc = replaceRE "(?s)</a>\\s*<ul>.*?</ul>" "</a>" $toc -}}
+        <div class="book-menu-toc">
+          {{ $toc | safeHTML }}
+        </div>
+      {{- end -}}
+    {{- end -}}
+  </li>
+{{- end -}}
+</ul>
+{{ end }}
+
+{{ define "book-menu-title" }}
+{{- with .Params.BookIcon -}}
+  <img src="{{ partial "docs/icon" . }}" class="book-icon" alt="{{ partial "docs/text/i18n" . }}" />
+{{- end -}}
+{{- if .Name -}}
+  {{- .Name -}}
+{{- else if .Page -}}
+  {{- partial "docs/title" .Page -}}
+{{- end -}}
+{{ end }}

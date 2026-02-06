@@ -1,7 +1,7 @@
 ﻿---
 title: "noScribe – Interviews mit KI transkribieren"
 description: "Datenschutzfreundliche und kostenlose Open-Source-Software für qualitative Sozialforschung, Journalismus und alle anderen, die mit sensiblen Audiodaten zu tun haben."
-bookToC: false
+bookToC: true
 ---
 
 # noScribe – Interviews mit KI transkribieren
@@ -21,7 +21,7 @@ Achtung: Jemand versucht über die Domain noscribe(punkt)ai kostenpflichtige Tra
 - verfügbar für **Windows, macOS und Linux**
 - **Komfortabler Editor** zur Prüfung und Korrektur der Transkripte
 
-Ursprünglich vor allem für die qualitative Sozialforschung entwickelt, wird noScribe heute überall dort eingesetzt, wo wir es mit besonders sensiblen Audiodaten zu tun haben - im Journalismus, in der Medizin, bei Behörden und NGOs. NoScribe wird von [Universitäten](https://sozmethode.hypotheses.org/2315) und [Hochschulen](https://kbss.site.phbern.ch/db/noscribe) empfohlen, vom [Computermagazin c't](https://www.heise.de/select/ct/2025/2/2433207582191637980), sowie in [Fachpublikationen für Journalist:innen](https://www.journalistin.at/singlenews/uid-968002/nie-wieder-abtippen-profitipps-zum-transkribieren-mit-ki/).
+Ursprünglich vor allem für die qualitative Sozialforschung entwickelt, wird noScribe heute überall dort eingesetzt, wo wir es mit besonders sensiblen Audiodaten zu tun haben - im Journalismus, in der Medizin, bei Unternehmen, Behörden und NGOs. NoScribe wird von [Universitäten](https://sozmethode.hypotheses.org/2315) und [Hochschulen](https://kbss.site.phbern.ch/db/noscribe) empfohlen, vom [Computermagazin c't](https://www.heise.de/select/ct/2025/2/2433207582191637980), sowie in [Fachpublikationen für Journalist:innen](https://www.journalistin.at/singlenews/uid-968002/nie-wieder-abtippen-profitipps-zum-transkribieren-mit-ki/).
 
 {{< img src="img/noScribe_main_window.png" alt="noScribe Hauptfenster" >}}
 (Der Screenshot zeigt ein [Interview mit der exilrussischen Soziologin Natalia Savelyeva](https://www.youtube.com/watch?v=vOwajAbvPzQ&t=2018s), das ich im Mai 2022 geführt habe.)
