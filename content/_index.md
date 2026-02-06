@@ -1,10 +1,10 @@
 ﻿---
-title: "noScribe – Interviews KI-gestützt transkribieren"
+title: "noScribe – Interviews mit KI transkribieren"
 description: "Datenschutzfreundliche und kostenlose Open-Source-Software für qualitative Sozialforschung, Journalismus und alle anderen, die mit sensiblen Audiodaten zu tun haben."
 bookToC: false
 ---
 
-# noScribe – Interviews KI-gestützt transkribieren
+# noScribe – Interviews mit KI transkribieren
 
 Dies ist die offizielle Webseite der Open-Source-Software noScribe ([GitHub](https://github.com/kaixxx/noScribe)). 
 
@@ -37,7 +37,7 @@ NoScribe kann fast jedes Audio- oder Videoformat verarbeiten. Als Ausgabe wird s
 
 Da die Transkription komplett lokal auf dem eigenen Computer erfolgt, muss man etwas Zeit einplanen: Eine Stunde Interview braucht ca. 1-3 Stunden Transkriptionszeit, auf älteren Rechnern teils noch länger. Man kann aber mehrere Aufträge in eine Warteschlange stellen, die dann bspw. über Nacht abgearbeitet werden. Eine NVIDIA-Grafikkarte (CUDA) kann die Transkription stark beschleunigen. Da der [Download](/docs/download-installation/) auch die KI-Modelle enthält, ist die Installationsdatei recht groß (ca. 3 GB).
 
-**Qualitatiive Sozialforschung**
+**Spezialfunktionen**
 
 NoScribe enthält einige Funktionen speziell für die qualitative Sozialforschung: So können Pausen oder gleichzeitiges Sprechen markiert werden und man kann Zeitmarken ([00:01:38]) einfügen lassen. Außerdem kann man entscheiden, ob Füllworte wie "ehm" auch transkribiert werden sollen oder nicht.  
 

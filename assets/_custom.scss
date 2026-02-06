@@ -39,6 +39,7 @@ a.book-btn[href]:hover {
   display: block;
   height: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .book-header .ns-header {
@@ -53,12 +54,38 @@ a.book-btn[href]:hover {
   padding-top: 5.9rem;
 }
 
+@media screen and (max-width: $mobile-breakpoint) {
+  .book-header h3 {
+    display: none;
+  }
+
+  .book-header.hidden {
+    height: auto;
+    margin-bottom: 1rem;
+    overflow: visible;
+  }
+
+  #menu-control:checked ~ main {
+    .book-page {
+      opacity: 0.12;
+    }
+
+    .book-menu-overlay {
+      background: rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+
 .book-page,
-.book-menu,
 .book-toc,
 .book-footer {
   position: relative;
   z-index: 1;
+}
+
+.book-menu {
+  position: relative;
+  z-index: 3;
 }
 
 body::before {

@@ -1,0 +1,19 @@
+<script>
+  (function () {
+    var menuControl = document.getElementById("menu-control");
+    if (!menuControl) return;
+
+    var menu = document.querySelector("aside.book-menu");
+    if (!menu) return;
+
+    menu.addEventListener("click", function (event) {
+      var target = event.target;
+      if (!target) return;
+
+      var link = target.closest("a[href]");
+      if (!link) return;
+
+      menuControl.checked = false;
+    });
+  })();
+</script>
