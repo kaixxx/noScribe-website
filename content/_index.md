@@ -48,7 +48,7 @@ Das KI-Modell hinter noScribe kann auch Dialekte wie bspw. Schweizerdeutsch rech
 
 {{% hint info %}} 
 **Mehr Info:**
-- Die noScribe [Bedienungsanleitung](/docs/bedienung/).
+- Die noScribe [Bedienungsanleitung](/docs/usage/).
 - Ein [Erfahrungbericht von Rebecca Schmidt](https://sozmethode.hypotheses.org/2315) (Universität Paderborn)
 - ["Datenaufbereitung durch Transkription"](https://www.pedocs.de/volltexte/2025/33856/pdf/Droege_2025_Datenaufbereitung_durch_Transkription.pdf), ein Fachartikel von mir zum Thema 
 {{% /hint %}}
