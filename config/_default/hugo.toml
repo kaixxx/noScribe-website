@@ -34,6 +34,7 @@ enableRobotsTXT = false
   BookServiceWorker = false
   BookSection = "docs"
   BookToC = false
+  BookFavicon = "img/noScribeLogo.png"
   DefaultLang = "de"
   OgImage = "img/graphic_sw.png"
   siteDescription = "Privacy-first, offline transcription for interviews and research."
