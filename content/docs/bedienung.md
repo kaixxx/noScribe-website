@@ -1,10 +1,10 @@
 ﻿---
-title: "Benutzung"
+title: "Bedienung"
 description: "Bedienung von noScribe und noScribeEdit sowie Hinweise zur Transkriptqualität."
 weight: 20
 ---
 
-# Benutzung
+# Bedienung
 
 ## Einstellungen
 
