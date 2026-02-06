@@ -2,6 +2,7 @@
 title: "Erwähnungen / Presse"
 description: "Platzhalter für externe Erwähnungen und Presselinks."
 weight: 50
+draft: true
 ---
 
 # Erwähnungen / Presse

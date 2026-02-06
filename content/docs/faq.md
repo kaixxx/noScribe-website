@@ -2,6 +2,7 @@
 title: "FAQ"
 description: "Häufige Fragen zu noScribe, Datenschutz und Systemvoraussetzungen."
 weight: 40
+draft: true
 ---
 
 # FAQ
