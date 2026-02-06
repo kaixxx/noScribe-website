@@ -1,12 +1,12 @@
 ﻿---
 title: "noScribe – Interviews mit KI transkribieren"
-description: "Datenschutzfreundliche und kostenlose Open-Source-Software für qualitative Sozialforschung, Journalismus und alle anderen, die mit sensiblen Audiodaten zu tun haben."
+description: "Offizielle Projektseite der Open-Source-Transkriptionssoftware noScribe (GPL-3.0) – lokal, datenschutzfreundlich, ohne Cloud."
 bookToC: true
 ---
 
 # noScribe – Interviews mit KI transkribieren
 
-Dies ist die offizielle Webseite der Open-Source-Software noScribe ([GitHub](https://github.com/kaixxx/noScribe)). 
+Dies ist die offizielle Projektseite der Open-Source-Software noScribe ([GitHub](https://github.com/kaixxx/noScribe)). noScribe ist eine Desktop-App zur Transkription von Interviews und anderen sensiblen Audiodaten – datenschutzfreundlich, ohne Cloud, mit hochwertigen lokalen KI-Modellen.
 
 {{% hint warning %}} 
 Achtung: Jemand versucht über die Domain noscribe(punkt)ai kostenpflichtige Transkriptionsdienste zu verkaufen. Ich habe damit nichts zu tun. Das echte noScribe ist kostenlos und wird es immer bleiben :) 
@@ -21,9 +21,9 @@ Achtung: Jemand versucht über die Domain noscribe(punkt)ai kostenpflichtige Tra
 - verfügbar für **Windows, macOS und Linux**
 - **Komfortabler Editor** zur Prüfung und Korrektur der Transkripte
 
-Ursprünglich vor allem für die qualitative Sozialforschung entwickelt, wird noScribe heute überall dort eingesetzt, wo wir es mit besonders sensiblen Audiodaten zu tun haben - im Journalismus, in der Medizin, bei Unternehmen, Behörden und NGOs. NoScribe wird von [Universitäten](https://sozmethode.hypotheses.org/2315) und [Hochschulen](https://kbss.site.phbern.ch/db/noscribe) empfohlen, vom [Computermagazin c't](https://www.heise.de/select/ct/2025/2/2433207582191637980), sowie in [Fachpublikationen für Journalist:innen](https://www.journalistin.at/singlenews/uid-968002/nie-wieder-abtippen-profitipps-zum-transkribieren-mit-ki/).
+Ursprünglich vor allem für die qualitative Sozialforschung entwickelt, wird noScribe heute überall dort eingesetzt, wo wir es mit besonders schützenswerten Audiodaten zu tun haben - im Journalismus, in der Medizin, bei Unternehmen, Behörden und NGOs. NoScribe wird von [Universitäten](https://sozmethode.hypotheses.org/2315) und [Hochschulen](https://kbss.site.phbern.ch/db/noscribe) empfohlen, vom [Computermagazin c't](https://www.heise.de/select/ct/2025/2/2433207582191637980), sowie in [Fachpublikationen für Journalist:innen](https://www.journalistin.at/singlenews/uid-968002/nie-wieder-abtippen-profitipps-zum-transkribieren-mit-ki/).
 
-{{< img src="img/noScribe_main_window.png" alt="noScribe Hauptfenster" >}}
+{{< img src="img/noScribe_main_window.png" alt="noScribe Hauptfenster" loading="eager" fetchpriority="high" >}}
 (Der Screenshot zeigt ein [Interview mit der exilrussischen Soziologin Natalia Savelyeva](https://www.youtube.com/watch?v=vOwajAbvPzQ&t=2018s), das ich im Mai 2022 geführt habe.)
 
 ## Wie nutze ich noScribe?
@@ -69,7 +69,7 @@ Viele andere Personen haben zu noScribe beigetragen. Mein besonderer Dank gilt P
 
 NoScribe ist kostenlos und wird es auch immer bleiben. Aber die Entwicklung verursacht reale Ausgaben, etwa für diese Webseite, für Testhardware oder eine Apple-Entwicklungslizenz. Wenn Sie das Projekt unterstützen möchten:
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/noscribe)
+[![ko-fi](/img/kofi.svg)](https://ko-fi.com/noscribe)
 
 ## Warum der Name „noScribe“?
 

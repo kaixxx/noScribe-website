@@ -2,6 +2,9 @@
 title: "noScribe"
 description: "Open-source transcription for interviews and research — local, privacy-first, no cloud."
 bookToC: false
+draft: true
+cascade:
+  draft: true
 ---
 
 # noScribe

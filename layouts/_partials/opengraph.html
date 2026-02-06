@@ -1,12 +1,26 @@
 {{- $title := partial "docs/html-head-title" . -}}
 {{- $description := or .Params.description .Description .Summary .Site.Params.siteDescription | plainify | htmlUnescape -}}
 {{- $url := .Permalink -}}
-{{- $image := "" -}}
+{{- $imagePath := "" -}}
 {{- with .Params.image -}}
-  {{- $image = . | absURL -}}
+  {{- $imagePath = . -}}
 {{- else -}}
   {{- with .Site.Params.OgImage -}}
-    {{- $image = . | absURL -}}
+    {{- $imagePath = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $image := "" -}}
+{{- if $imagePath -}}
+  {{- $image = $imagePath | absURL -}}
+{{- end -}}
+{{- $imageWidth := "" -}}
+{{- $imageHeight := "" -}}
+{{- if and $imagePath (not (urls.Parse $imagePath).Host) -}}
+  {{- $staticPath := printf "static/%s" (strings.TrimPrefix "/" $imagePath) -}}
+  {{- if fileExists $staticPath -}}
+    {{- $imgConfig := imageConfig $staticPath -}}
+    {{- $imageWidth = $imgConfig.Width -}}
+    {{- $imageHeight = $imgConfig.Height -}}
   {{- end -}}
 {{- end -}}
 
@@ -15,13 +29,21 @@
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ $url }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ or .Site.Language.LanguageCode .Site.Language.Lang }}">
+{{- $translations := .Translations -}}
+{{- range $translations -}}
+  <meta property="og:locale:alternate" content="{{ or .Language.LanguageCode .Language.Lang }}">
+{{- end -}}
 {{- if $image -}}
 <meta property="og:image" content="{{ $image }}">
+{{- with $imageWidth }}<meta property="og:image:width" content="{{ . }}">{{- end }}
+{{- with $imageHeight }}<meta property="og:image:height" content="{{ . }}">{{- end }}
 {{- end }}
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:url" content="{{ $url }}">
 {{- if $image -}}
 <meta name="twitter:image" content="{{ $image }}">
 {{- end }}

@@ -3,10 +3,19 @@ noScribe custom head
 {{ "-->" | safeHTML }}
 
 {{- $description := or .Params.description .Description .Summary .Site.Params.siteDescription | plainify | htmlUnescape -}}
+{{- $author := .Site.Params.authorName -}}
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ $description }}">
+{{- if $author }}
+<meta name="author" content="{{ $author }}">
+{{- end }}
+{{- if .Params.noindex -}}
+<meta name="robots" content="noindex, nofollow">
+{{- else -}}
+<meta name="robots" content="index, follow">
+{{- end }}
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark">
@@ -25,7 +34,7 @@ noScribe custom head
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{- $translations := .AllTranslations | append . -}}
+{{- $translations := .Translations | append . -}}
 {{- range $translations -}}
   <link rel="alternate" hreflang="{{ default .Site.LanguageCode .Language.Lang }}" href="{{ .Permalink }}" title="{{ partial "docs/title" . }}">
 {{- end -}}

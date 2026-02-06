@@ -16,6 +16,10 @@ disableKinds = ["taxonomy"]
 
 enableRobotsTXT = false
 
+# English draft content currently lives under content/en.
+# Prevent accidental publishing until proper i18n is enabled.
+ignoreFiles = ["^en/"]
+
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
@@ -37,7 +41,12 @@ enableRobotsTXT = false
   BookFavicon = "img/noScribeLogo.png"
   DefaultLang = "de"
   OgImage = "img/graphic_sw.png"
-  siteDescription = "Privacy-first, offline transcription for interviews and research."
+  siteDescription = "Offizielle Website der Open-Source-Transkriptionssoftware noScribe – lokal, datenschutzfreundlich, ohne Cloud."
+  authorName = "Dr. Kai Dröge"
+  authorUrl = "https://github.com/kaixxx"
+  authorSameAs = ["https://github.com/kaixxx"]
+  codeRepository = "https://github.com/kaixxx/noScribe"
+  licenseUrl = "https://www.gnu.org/licenses/gpl-3.0.html"
 
 [languages]
   [languages.de]

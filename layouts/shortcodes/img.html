@@ -6,6 +6,20 @@
 {{- $width := .Get "width" -}}
 {{- $height := .Get "height" -}}
 {{- $loading := .Get "loading" -}}
+{{- $decoding := .Get "decoding" | default "async" -}}
+{{- $fetchpriority := .Get "fetchpriority" -}}
+
+{{- if not $loading -}}
+  {{- $loading = "lazy" -}}
+{{- end -}}
+
+{{- $staticPath := printf "static/%s" (strings.TrimPrefix "/" $src) -}}
+{{- if and (not $width) (not $height) (fileExists $staticPath) -}}
+  {{- $imgConfig := imageConfig $staticPath -}}
+  {{- $width = $imgConfig.Width -}}
+  {{- $height = $imgConfig.Height -}}
+{{- end -}}
+
 <img src="{{ $src | relURL }}" alt="{{ $alt }}"
 {{- with $title }} title="{{ . }}"{{- end }}
 {{- with $class }} class="{{ . }}"{{- end }}
@@ -13,4 +27,6 @@
 {{- with $width }} width="{{ . }}"{{- end }}
 {{- with $height }} height="{{ . }}"{{- end }}
 {{- with $loading }} loading="{{ . }}"{{- end }}
+{{- with $decoding }} decoding="{{ . }}"{{- end }}
+{{- with $fetchpriority }} fetchpriority="{{ . }}"{{- end }}
 />

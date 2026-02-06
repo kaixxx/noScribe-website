@@ -1,18 +1,73 @@
-{{- $description := or .Params.description .Site.Params.siteDescription | plainify | htmlUnescape -}}
-{{- $data := dict
-  "@context" "https://schema.org"
+{{- $siteUrl := strings.TrimSuffix "/" .Site.BaseURL -}}
+{{- $pageUrl := .Permalink -}}
+{{- $title := partial "docs/html-head-title" . -}}
+{{- $description := or .Params.description .Description .Summary .Site.Params.siteDescription | plainify | htmlUnescape -}}
+{{- $inLanguage := or .Site.Language.LanguageCode .Site.Language.Lang -}}
+{{- $authorName := .Site.Params.authorName | default "Kai Dröge" -}}
+{{- $authorUrl := .Site.Params.authorUrl -}}
+{{- $authorSameAs := .Site.Params.authorSameAs -}}
+{{- $codeRepository := .Site.Params.codeRepository -}}
+{{- $licenseUrl := .Site.Params.licenseUrl -}}
+
+{{- $personId := printf "%s/#person" $siteUrl -}}
+{{- $websiteId := printf "%s/#website" $siteUrl -}}
+{{- $softwareId := printf "%s/#software" $siteUrl -}}
+{{- $webpageId := printf "%s/#webpage" (strings.TrimSuffix "/" $pageUrl) -}}
+
+{{- $person := dict "@type" "Person" "@id" $personId "name" $authorName -}}
+{{- with $authorUrl -}}
+  {{- $person = merge $person (dict "url" .) -}}
+{{- end -}}
+{{- if $authorSameAs -}}
+  {{- $person = merge $person (dict "sameAs" $authorSameAs) -}}
+{{- end -}}
+
+{{- $website := dict
+  "@type" "WebSite"
+  "@id" $websiteId
+  "url" $siteUrl
+  "name" .Site.Title
+  "publisher" (dict "@id" $personId)
+  "inLanguage" $inLanguage
+-}}
+
+{{- $webpage := dict
+  "@type" "WebPage"
+  "@id" $webpageId
+  "url" $pageUrl
+  "name" $title
+  "isPartOf" (dict "@id" $websiteId)
+  "inLanguage" $inLanguage
+-}}
+{{- if .IsHome -}}
+  {{- $webpage = merge $webpage (dict "mainEntity" (dict "@id" $softwareId)) -}}
+{{- end -}}
+
+{{- $software := dict
   "@type" "SoftwareApplication"
+  "@id" $softwareId
   "name" "noScribe"
   "description" $description
   "applicationCategory" "MultimediaApplication"
   "operatingSystem" (slice "Windows" "macOS" "Linux")
   "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "EUR" "availability" "https://schema.org/InStock")
-  "license" "GPL-3.0"
   "isAccessibleForFree" true
-  "codeRepository" "https://github.com/kaixxx/noScribe"
-  "author" (dict "@type" "Person" "name" "Kai Dröge" "url" "https://github.com/kaixxx")
-  "sameAs" (slice "https://github.com/kaixxx")
-  "url" .Site.BaseURL
-  "inLanguage" (or .Site.Language.LanguageCode .Site.Language.Lang)
+  "author" (dict "@id" $personId)
+  "publisher" (dict "@id" $personId)
+  "url" $siteUrl
+  "inLanguage" $inLanguage
 -}}
-<script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- with $codeRepository -}}
+  {{- $software = merge $software (dict "codeRepository" .) -}}
+{{- end -}}
+{{- with $licenseUrl -}}
+  {{- $software = merge $software (dict "license" .) -}}
+{{- end -}}
+
+{{- $graph := slice $person $website $webpage -}}
+{{- if .IsHome -}}
+  {{- $graph = $graph | append $software -}}
+{{- end -}}
+{{- $data := dict "@context" "https://schema.org" "@graph" $graph -}}
+{{- $json := $data | jsonify (dict "noHTMLEscape" true) -}}
+<script type="application/ld+json">{{ $json | safeJS }}</script>

@@ -1,0 +1,16 @@
+{
+  "name": "{{ .Site.Title }}",
+  "short_name": "{{ .Site.Title }}",
+  "start_url": "{{ "/" | relURL }}",
+  "scope": "{{ "/" | relURL }}",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e66a00",
+  "icons": [
+    {
+      "src": "{{ "img/noScribeLogo.png" | relURL }}",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
