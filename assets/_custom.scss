@@ -65,6 +65,15 @@ a.book-btn[href]:hover {
     overflow: visible;
   }
 
+  .book-header label {
+    padding: 0.35rem;
+  }
+
+  .book-header label .book-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
   #menu-control:checked ~ main {
     .book-page {
       opacity: 0.12;
