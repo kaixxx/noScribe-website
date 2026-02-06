@@ -153,6 +153,10 @@ h6 {
   content: "> ";
 }
 
+.book-menu-toc .book-menu-toc-list ul ul {
+  display: none;
+}
+
 .markdown ul li + li,
 .markdown ol li + li {
   margin-top: 0.35rem;
