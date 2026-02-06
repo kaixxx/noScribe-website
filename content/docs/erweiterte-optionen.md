@@ -25,7 +25,7 @@ Im gleichen Profilverzeichnis existiert ein Ordner `log` mit detaillierten Infor
 
 ## Spezielle Transkriptionsmodelle nutzen
 
-NoScribe kommt mit zwei Transkriptionsmodellen (precise/fast), die beide auf *Whisper V3 turbo* basieren. Es können aber auch andere Whisper-Modelle genutzt werden, die bspw. besser auf bestimmte Sprachen abgestimmt sind. 
+NoScribe kommt mit zwei Transkriptionsmodellen (precise/fast), die beide auf *Whisper V3 Turbo* basieren. Es können aber auch andere Whisper-Modelle genutzt werden, die bspw. besser auf bestimmte Sprachen abgestimmt sind. 
 
 **Installation:**
 
@@ -41,13 +41,13 @@ NoScribe kommt mit zwei Transkriptionsmodellen (precise/fast), die beide auf *Wh
 
 **Modelle:** 
 
-- Das **offizielle Faster-Whisper-Repository** (15 Modelle): https://huggingface.co/Systran Hier gibt es auch Whisper-v2-Modell, das bis zur Version 0.5 von noScribe Standard war und immer noch von einigen bevorzugt wird, auch wenn es deutlich langsamer ist. Die rein englischen Modelle (mit der Endung „.en“) sind ebenfalls interessant, da sie deutlich schneller laufen.
-- **Eine für Französisch angepasste Version von Whisper V3**: https://huggingface.co/bofenghuang/whisper-large-v3-french/tree/main/ctranslate2 (Wenn die heruntergeladenen Dateien das Präfix „ctranslate2_“ haben, dieses bitte entfernen.
+- Das **offizielle Faster-Whisper-Repository** (15 Modelle): https://huggingface.co/Systran Hier gibt es auch das Whisper-v2-Modell, das bis zur Version 0.5 von noScribe Standard war und immer noch von einigen bevorzugt wird, auch wenn es deutlich langsamer ist. Die rein englischen Modelle (mit der Endung „.en“) sind ebenfalls interessant, da sie deutlich schneller laufen.
+- **Eine für Französisch angepasste Version von Whisper V3**: https://huggingface.co/bofenghuang/whisper-large-v3-french/tree/main/ctranslate2 (Wenn die heruntergeladenen Dateien das Präfix „ctranslate2_“ haben, dieses bitte entfernen.)
 - **Eine für Deutsch optimierte Version von Whisper V3** (meine Erfahrung: nur geringfügige Verbesserungen bei der Transkriptionsqualität, aber weniger Präzision bei der Pausenerkennung und der Identifizierung von überlappenden Sprachsequenzen): https://huggingface.co/aseifert/faster-whisper-large-v3-turbo-german/tree/main Sie benötigen außerdem die Datei `tokenizer.json` aus dem ursprünglichen Whisper V3-Repository: https://huggingface.co/Systran/faster-whisper-large-v3/tree/main
 
-Weitere Modelle findet man auf [huggingface](https://huggingface.co/). Suchen Sie nach „faster-whisper” und der gewünschten Sprache (oder nur nach „whisper”, um Modelle zu finden, die konvertiert werden können). 
+Weitere Modelle findet man auf [huggingface](https://huggingface.co/). Suchen Sie nach „faster-whisper“ und der gewünschten Sprache (oder nur nach „whisper“, um Modelle zu finden, die konvertiert werden können). 
 
-Ich verwende diese Version von Whisper V3 Turbo als „präzises” Modell: https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo
+Ich verwende diese Version von Whisper V3 Turbo als „präzises“ Modell: https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo
 
 **Wenn Sie ein gutes neues Modell gefunden haben, teilen Sie es bitte in dieser Diskussion: https://github.com/kaixxx/noScribe/discussions/132**.
 

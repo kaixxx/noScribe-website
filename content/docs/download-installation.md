@@ -19,7 +19,7 @@ Der Quellcode ist auf [GitHub](https://github.com/kaixxx/noScribe) verfügbar, a
 
 ### Download
 
-Es stehen zwei Versionen zu Auswahl: Meist sollte die Standardversion die richtige Wahl sein. Wer jedoch eine NVIDIA Grafikkarte (ab RTX 20XX) mit mindestens 6 GB VRAM besitzt, kann von der CUDA-Beschleunigung profitieren, die die Transkriptionszeit drastisch reduzieren kann.  
+Es stehen zwei Versionen zur Auswahl: Meist ist die Standardversion die richtige Wahl. Wer jedoch eine NVIDIA-Grafikkarte (ab RTX 20XX) mit mindestens 6 GB VRAM besitzt, kann von der CUDA-Beschleunigung profitieren, die die Transkriptionszeit drastisch reduzieren kann.  
 
 - **Standardversion (ohne NVIDIA‑GPU):**
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fnormal
@@ -32,7 +32,7 @@ Es stehen zwei Versionen zu Auswahl: Meist sollte die Standardversion die richti
 ### Installation
 
 1. Installationsdatei starten (kann einige Minuten dauern).
-2. Wenn Windows vor einem "unbekannten Herausgeber" warnt, "Mehr Informationen > Trotzdem ausführen“ wählen. Diese Warnung lässt sich für freie Software leider nicht so einfach umgehen. 
+2. Wenn Windows vor einem "unbekannten Herausgeber" warnt, „Mehr Informationen > Trotzdem ausführen“ wählen. Diese Warnung lässt sich für freie Software leider nicht so einfach umgehen. 
 3. Wer noScribe auf mehreren Rechnern automatisch und still installieren möchte: Setup mit `/S` starten.
 
 ### Bekannte Probleme (Windows)
@@ -51,7 +51,7 @@ Es stehen zwei Versionen zu Auswahl: Meist sollte die Standardversion die richti
 - Download:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FmacOS%2FApple%20Silicon
 - DMG öffnen und **noScribe** sowie **noScribeEdit** in den Programme‑Ordner ziehen.
-- Rosetta2 wird benötigt (für ffmpeg). Wenn nicht bereits vorhanden:
+- Rosetta 2 wird benötigt (für ffmpeg). Wenn nicht bereits vorhanden:
   - Terminal öffnen (`/Applications/Utilities/Terminal.app`)
   - `softwareupdate --install-rosetta` (oder `--agree-to-license`) ausführen
 - Apps im Programme‑Ordner starten.
@@ -65,10 +65,10 @@ Es stehen zwei Versionen zu Auswahl: Meist sollte die Standardversion die richti
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
 Leider können wir die Pakete für Intel-Macs nicht korrekt signieren, sodass Sie eine Warnung erhalten, dass noScribe und noScribeEdit von nicht registrierten Entwicklern stammen. Sie müssen die Ausführung beider Programme manuell zulassen, wenn Ihr Gatekeeper aktiv ist. Befolgen Sie dazu diese Schritte:
-- Doppelklicken Sie auf die heruntergeladene dmg-Datei.
-- Ziehen Sie noScribe und noScribeEdit in den Link zu Ihrem Anwendungsordner (mit der Bezeichnung „drag both here to install“).
+- Doppelklicken Sie auf die heruntergeladene DMG-Datei.
+- Ziehen Sie noScribe und noScribeEdit in den Link Ihres Anwendungsordners (mit der Bezeichnung „drag both here to install“).
 - Starten Sie noScribe, indem Sie auf die App in Ihrem Anwendungsordner doppelklicken. Sie erhalten eine Fehlermeldung, dass noScribe von einem nicht registrierten Entwickler stammt. Verfahren Sie ebenso mit dem noScribe Editor.
-- Gehen Sie zu Einstellungen -> Datenschutz und Sicherheit -> Scrollen Sie nach unten, bis Sie eine Meldung sehen, dass noScribe am Starten gehindert wurde, und klicken Sie auf „Trotzdem öffnen”. Verfahren Sie erneut ebenso mit dem noScribe Editor.
+- Gehen Sie zu Einstellungen -> Datenschutz und Sicherheit -> Scrollen Sie nach unten, bis Sie eine Meldung sehen, dass noScribe am Starten gehindert wurde, und klicken Sie auf „Trotzdem öffnen“. Verfahren Sie erneut ebenso mit dem noScribe Editor.
 - Von nun an sollten beide Programme ohne Probleme starten.
 
 ## Linux
