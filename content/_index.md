@@ -9,7 +9,7 @@ bookToC: true
 Dies ist die offizielle Webseite der Open-Source-Software noScribe ([GitHub](https://github.com/kaixxx/noScribe)). 
 
 {{% hint warning %}} 
-Achtung: Jemand versucht über die Domain noscribe(punkt)ai kostenpflichtige Transkriptionsdienste zu verkaufen. Ich habe damit nichts zu tun. Das echte noScribe ist kostenlos und wird es immer bleiben. 
+Achtung: Jemand versucht über die Domain noscribe(punkt)ai kostenpflichtige Transkriptionsdienste zu verkaufen. Ich habe damit nichts zu tun. Das echte noScribe ist kostenlos und wird es immer bleiben :) 
 {{% /hint %}}
 
 ## Was ist noScribe?
