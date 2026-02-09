@@ -35,7 +35,7 @@ NoScribe kann fast jedes Audio- oder Videoformat verarbeiten. Als Ausgabe wird s
 
 **Verarbeitung**
 
-Da die Transkription komplett lokal auf dem eigenen Computer erfolgt, muss man etwas Zeit einplanen: Eine Stunde Interview braucht ca. 1-3 Stunden Transkriptionszeit, auf älteren Rechnern teils noch länger. Man kann aber mehrere Aufträge in eine Warteschlange stellen, die dann bspw. über Nacht abgearbeitet werden. Eine NVIDIA-Grafikkarte (CUDA) kann die Transkription stark beschleunigen. Da der [Download](/docs/download-installation/) auch die KI-Modelle enthält, ist die Installationsdatei recht groß (ca. 3 GB).
+Da die Transkription komplett lokal auf dem eigenen Computer erfolgt, muss man etwas Zeit einplanen: Eine Stunde Interview braucht ca. 1-3 Stunden Transkriptionszeit, auf älteren Rechnern teils noch länger. Man kann aber mehrere Aufträge in eine Warteschlange stellen, die dann bspw. über Nacht abgearbeitet werden. Eine NVIDIA-Grafikkarte (CUDA) kann die Transkription stark beschleunigen. Da der [Download]({{< relref "docs/download-installation.md" >}}) auch die KI-Modelle enthält, ist die Installationsdatei recht groß (ca. 3 GB).
 
 **Spezialfunktionen**
 
@@ -48,7 +48,7 @@ Das KI-Modell hinter noScribe kann auch Dialekte wie bspw. Schweizerdeutsch rech
 
 {{% hint info %}} 
 **Mehr Info:**
-- Die noScribe [Bedienungsanleitung](/docs/usage/).
+- Die noScribe [Bedienungsanleitung]({{< relref "docs/usage.md" >}}).
 - Ein [Erfahrungbericht von Rebecca Schmidt](https://sozmethode.hypotheses.org/2315) (Universität Paderborn)
 - ["Datenaufbereitung durch Transkription"](https://www.pedocs.de/volltexte/2025/33856/pdf/Droege_2025_Datenaufbereitung_durch_Transkription.pdf), ein Fachartikel von mir zum Thema 
 {{% /hint %}}

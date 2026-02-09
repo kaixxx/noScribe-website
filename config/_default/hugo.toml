@@ -2,10 +2,11 @@ baseURL = "https://noscribe.de/"
 
 theme = "hugo-book"
 
-defaultContentLanguage = "de"
-defaultContentLanguageInSubdir = false
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+disableDefaultLanguageRedirect = true
 
-languageCode = "de-DE"
+languageCode = "en-US"
 
 title = "noScribe"
 
@@ -35,7 +36,7 @@ enableRobotsTXT = false
   BookSection = "docs"
   BookToC = false
   BookFavicon = "img/noScribeLogo.png"
-  DefaultLang = "de"
+  DefaultLang = "en"
   OgImage = "img/graphic_sw.png"
   siteDescription = "Offizielle Website der Open-Source-Transkriptionssoftware noScribe – lokal, datenschutzfreundlich, ohne Cloud."
   authorName = "Dr. Kai Dröge"
@@ -48,13 +49,13 @@ enableRobotsTXT = false
   [languages.de]
     languageName = "Deutsch"
     languageCode = "de-DE"
-    weight = 1
+    weight = 2
     title = "noScribe"
     contentDir = "content/de"
   [languages.en]
     languageName = "English"
     languageCode = "en-US"
-    weight = 2
+    weight = 1
     title = "noScribe"
     contentDir = "content/en"
 
