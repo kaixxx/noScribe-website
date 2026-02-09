@@ -18,7 +18,7 @@ You can change language on every page later.
 <noscript>
   JavaScript is disabled; please choose a language above.
 </noscript>
-
+ 
 <script>
   (function () {
     if (window.location.pathname !== "/") return;
