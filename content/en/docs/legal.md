@@ -6,7 +6,7 @@ weight: 60
 
 # Legal Notice
 
-Information in accordance with § 5 DDG
+Information in accordance with § 5 DDG (Germany)
 
 Kai Dröge<br>
 Emil-Claar-Straße 8<br>
@@ -14,7 +14,7 @@ Emil-Claar-Straße 8<br>
 Germany<br>
 E-Mail: kai.droege@hslu.ch
 
-## Privacy Policy
+## Privacy Policy for the Website
 
 This website uses **no cookies** and **no tracking/analytics**.
 
