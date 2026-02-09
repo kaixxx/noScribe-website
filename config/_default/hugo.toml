@@ -16,10 +16,6 @@ disableKinds = ["taxonomy"]
 
 enableRobotsTXT = false
 
-# English draft content currently lives under content/en.
-# Prevent accidental publishing until proper i18n is enabled.
-ignoreFiles = ["^en/"]
-
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
@@ -54,9 +50,22 @@ ignoreFiles = ["^en/"]
     languageCode = "de-DE"
     weight = 1
     title = "noScribe"
+    contentDir = "content/de"
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    weight = 2
+    title = "noScribe"
+    contentDir = "content/en"
 
-[menu]
-  [[menu.before]]
+[languages.de.menu]
+  [[languages.de.menu.before]]
     name = "Startseite"
+    pageRef = "/"
+    weight = 1
+
+[languages.en.menu]
+  [[languages.en.menu.before]]
+    name = "Home"
     pageRef = "/"
     weight = 1
