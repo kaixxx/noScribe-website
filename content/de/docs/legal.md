@@ -14,7 +14,7 @@ Emil-Claar-Straße 8<br>
 Deutschland<br>
 E-Mail: kai.droege@hslu.ch
 
-## Datenschutzerklärung
+## Datenschutzerklärung für diese Website
 
 Diese Website verwendet **keine Cookies** und **kein Tracking/Analytics**.
 

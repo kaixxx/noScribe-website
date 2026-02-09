@@ -41,7 +41,7 @@ Use the noScribe Editor to review and correct against the audio. Add non-verbal 
 
 ### Can I use noScribe commercially?
 
-Yes, no problem. There are no restrictions at all on how you use the transcripts you create. If you want to change the software itself, you must comply with the GPL-3.0 license terms: https://github.com/kaixxx/noScribe/blob/main/LICENSE.txt.
+Yes, no problem. There are no restrictions at all on how you use the transcripts you create. A [donation](https://ko-fi.com/noscribe) would be appreciated, but is not required. If you want to change the software itself, you must comply with the GPL-3.0 license terms: https://github.com/kaixxx/noScribe/blob/main/LICENSE.txt.
 
 ### Where can I get support if I run into problems?
 

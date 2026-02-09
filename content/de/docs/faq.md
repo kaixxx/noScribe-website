@@ -13,7 +13,7 @@ Ja. NoScribe war von Anfang an als rein lokale Desktop-App konzipiert. Das war d
 
 ### Ist noScribe eine DSGVO-konforme Transkriptionslösung?
 
-Ich bin kein Jurist. Aber nach allem, was ich sagen kann: Ja. Die rein lokale Verarbeitung von sensiblen Daten gilt als der Goldstandard des Datenschutzes - zumindest, wenn man den eigenen Rechner gut gegen unbefugten Zugriff sichert.  
+Ja, soweit ich das als Nicht-Jurist beurteilen kann. Die rein lokale Verarbeitung von sensiblen Daten gilt als Goldstandard des Datenschutzes - zumindest, wenn man den eigenen Rechner gut gegen unbefugten Zugriff sichert. 
 
 ### Brauche ich einen besonders leistungsfähigen Computer für die lokale Transkription?
 
@@ -41,7 +41,7 @@ Nutzen Sie den noScribe Editor zur Kontrolle und Korrektur anhand des Audio. Erg
 
 ### Kann ich noScribe auch kommerziell nutzen?
 
-Ja, kein Problem. Die Verwendung der erstellten Transkripte unterliegt überhaupt keiner Einschränkung. Wenn Sie die Software selbst weiterentwickeln wollen, müssen Sie die die Lizenzbedingungen der GPL-3.0 beachten: https://github.com/kaixxx/noScribe/blob/main/LICENSE.txt.
+Ja, kein Problem. Die Verwendung der erstellten Transkripte unterliegt keinerlei Einschränkung. Über eine [Spende](https://ko-fi.com/noscribe) freue ich mich natürlich. Wenn Sie die Software selbst weiterentwickeln wollen, müssen Sie die die Lizenzbedingungen der GPL-3.0 beachten: https://github.com/kaixxx/noScribe/blob/main/LICENSE.txt.
 
 ### Wo bekomme ich Unterstützung bei Problemen?
 
