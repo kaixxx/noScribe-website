@@ -38,7 +38,9 @@ noScribe custom head
 
 {{- $translations := .Translations | append . -}}
 {{- range $translations -}}
-  <link rel="alternate" hreflang="{{ default .Site.LanguageCode .Language.Lang }}" href="{{ .Permalink }}" title="{{ partial "docs/title" . }}">
+  {{- if ne .Language.Lang "und" -}}
+    <link rel="alternate" hreflang="{{ default .Site.LanguageCode .Language.Lang }}" href="{{ .Permalink }}" title="{{ partial "docs/title" . }}">
+  {{- end -}}
 {{- end -}}
 
 {{- $xDefault := "/" | absURL -}}

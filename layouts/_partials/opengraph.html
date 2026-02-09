@@ -29,10 +29,12 @@
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ $url }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ or .Site.Language.LanguageCode .Site.Language.Lang }}">
-{{- $translations := .Translations -}}
-{{- range $translations -}}
-  <meta property="og:locale:alternate" content="{{ or .Language.LanguageCode .Language.Lang }}">
+{{- if ne .Language.Lang "und" -}}
+  <meta property="og:locale" content="{{ or .Site.Language.LanguageCode .Site.Language.Lang }}">
+  {{- $translations := .Translations -}}
+  {{- range $translations -}}
+    <meta property="og:locale:alternate" content="{{ or .Language.LanguageCode .Language.Lang }}">
+  {{- end -}}
 {{- end -}}
 {{- if $image -}}
 <meta property="og:image" content="{{ $image }}">

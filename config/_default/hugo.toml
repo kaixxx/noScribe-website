@@ -6,7 +6,7 @@ defaultContentLanguage = "und"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
 
-languageCode = "und"
+languageCode = "en-US"
 
 title = "noScribe"
 
@@ -38,7 +38,7 @@ enableRobotsTXT = false
   BookFavicon = "img/noScribeLogo.png"
   DefaultLang = "en"
   OgImage = "img/graphic_sw.png"
-  siteDescription = "Offizielle Website der Open-Source-Transkriptionssoftware noScribe – lokal, datenschutzfreundlich, ohne Cloud."
+  siteDescription = "Official project site of the open-source transcription software noScribe – local, privacy-friendly, no cloud."
   authorName = "Dr. Kai Dröge"
   authorUrl = "https://github.com/kaixxx"
   authorSameAs = ["https://github.com/kaixxx"]
@@ -64,6 +64,12 @@ enableRobotsTXT = false
     weight = 1
     title = "noScribe"
     contentDir = "content/en"
+
+[languages.de.params]
+  siteDescription = "Offizielle Projektseite der Open-Source-Transkriptionssoftware noScribe – lokal, datenschutzfreundlich, ohne Cloud."
+
+[languages.en.params]
+  siteDescription = "Official project site of the open-source transcription software noScribe – local, privacy-friendly, no cloud."
 
 [languages.de.menu]
   [[languages.de.menu.before]]

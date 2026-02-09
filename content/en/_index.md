@@ -35,7 +35,7 @@ noScribe can process almost any audio or video format. By default it creates an 
 
 **Processing**
 
-Because transcription happens entirely locally on your own computer, it needs some time: One hour of interview takes about 1-3 hours of transcription time, on older machines even longer. But you can queue multiple jobs, for example overnight. An NVIDIA graphics card (CUDA) can significantly speed up transcription. Since the [download]({{< relref "docs/download-installation.md" >}}) also includes the AI models, the installer is quite large (about 3 GB).
+Because transcription happens entirely locally on your own computer, it needs some time: One hour of interview takes about 1-3 hours of transcription time, on older machines even longer. But you can queue multiple jobs, for example overnight. An NVIDIA graphics card (CUDA) can significantly speed up transcription. Since the download also includes the AI models, the installer is quite large (about 3 GB).
 
 **Special features**
 
@@ -43,7 +43,7 @@ noScribe includes several features specifically for qualitative social research:
 
 **Languages and correction**
 
-The AI model behind noScribe supports many languages and can handle dialects quite good as well. In general, a good audio recording with as little background noise as possible saves a lot of time in post-processing. But review and correction are always necessary. For this, a dedicated editor is included that lets you align audio and text easily.
+The AI model behind noScribe supports many languages and can handle dialects quite well, too. In general, a good audio recording with as little background noise as possible saves a lot of time in post-processing. But review and correction are always necessary. For this, a dedicated editor is included that lets you align audio and text easily.
 
 {{% hint info %}}
 **More info:**

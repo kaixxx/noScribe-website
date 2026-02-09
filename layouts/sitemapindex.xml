@@ -1,0 +1,10 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range . -}}
+    {{- if ne .Language.Lang "und" -}}
+      <sitemap>
+        <loc>{{ printf "%s%s" .Home.Permalink "sitemap.xml" }}</loc>
+      </sitemap>
+    {{- end -}}
+  {{- end -}}
+</sitemapindex>
