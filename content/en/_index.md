@@ -1,6 +1,7 @@
 ---
 title: "noScribe – Free Interview Transcription with AI"
 description: "Official project site of the open-source transcription software noScribe (GPL-3.0) – local, privacy-friendly, no cloud."
+translationKey: "home"
 bookToC: true
 ---
 

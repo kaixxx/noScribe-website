@@ -11,7 +11,9 @@ noScribe custom head
 {{- if $author }}
 <meta name="author" content="{{ $author }}">
 {{- end }}
-{{- if .Params.noindex -}}
+{{- if .Params.robots -}}
+<meta name="robots" content="{{ .Params.robots }}">
+{{- else if .Params.noindex -}}
 <meta name="robots" content="noindex, nofollow">
 {{- else -}}
 <meta name="robots" content="index, follow">

@@ -2,11 +2,11 @@ baseURL = "https://noscribe.de/"
 
 theme = "hugo-book"
 
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguage = "und"
+defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
 
-languageCode = "en-US"
+languageCode = "und"
 
 title = "noScribe"
 
@@ -46,6 +46,12 @@ enableRobotsTXT = false
   licenseUrl = "https://www.gnu.org/licenses/gpl-3.0.html"
 
 [languages]
+  [languages.und]
+    languageName = "Language"
+    languageCode = "und"
+    weight = 0
+    title = "noScribe"
+    contentDir = "content/und"
   [languages.de]
     languageName = "Deutsch"
     languageCode = "de-DE"
