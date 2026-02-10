@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Advanced Options"
 description: "CLI, configuration, custom models, and development contributions."
+translationKey: "advanced-options"
 weight: 30
 ---
 

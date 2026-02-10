@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Bedienung"
 description: "Bedienung von noScribe und noScribeEdit sowie Hinweise zur Transkriptqualität."
+translationKey: "usage"
 weight: 20
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Usage"
 description: "Using noScribe and noScribeEdit, plus notes on transcript quality."
+translationKey: "usage"
 weight: 20
 ---
 

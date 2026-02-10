@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Erweiterte Optionen"
 description: "CLI, Konfiguration, eigene Modelle sowie Entwicklung und Beiträge."
+translationKey: "advanced-options"
 weight: 30
 ---
 

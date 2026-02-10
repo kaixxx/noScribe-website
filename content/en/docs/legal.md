@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Legal Notice & Privacy"
 description: "Legal information, imprint, and privacy policy."
+translationKey: "legal"
 weight: 60
 ---
 

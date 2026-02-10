@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Mentions / Press"
 description: "Placeholder for external mentions and press links."
+translationKey: "mentions"
 weight: 50
 draft: true
 ---

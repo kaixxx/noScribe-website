@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Download and Installation"
 description: "Download links and installation instructions for Windows, macOS, and Linux."
+translationKey: "download-installation"
 weight: 10
 ---
 

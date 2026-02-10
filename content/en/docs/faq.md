@@ -1,6 +1,7 @@
-﻿---
+---
 title: "FAQ"
 description: "Common questions about noScribe, privacy, and system requirements."
+translationKey: "faq"
 weight: 40
 draft: false
 ---

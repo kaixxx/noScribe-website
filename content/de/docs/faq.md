@@ -1,6 +1,7 @@
-﻿---
+---
 title: "FAQ"
 description: "Häufige Fragen zu noScribe, Datenschutz und Systemvoraussetzungen."
+translationKey: "faq"
 weight: 40
 draft: false
 ---

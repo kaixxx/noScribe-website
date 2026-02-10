@@ -11,6 +11,7 @@ bookToC: false
 
 {{< button href="/en/" >}}English{{< /button >}}
 {{< button href="/de/" >}}Deutsch{{< /button >}}
+{{< button href="/fr/" >}}Français{{< /button >}}
 
 Your browser language is used for an automatic redirect. 
 You can change language on every page later.
@@ -26,7 +27,8 @@ You can change language on every page later.
     // Add new languages by extending this map.
     var languagePaths = {
       en: "/en/",
-      de: "/de/"
+      de: "/de/",
+      fr: "/fr/"
     };
     var fallback = "/en/";
 

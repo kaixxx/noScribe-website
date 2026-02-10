@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Impressum & Datenschutz"
 description: "Rechtliche Hinweise, Impressum und Datenschutzerklärung."
+translationKey: "legal"
 weight: 60
 ---
 

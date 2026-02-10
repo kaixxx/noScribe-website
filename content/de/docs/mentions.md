@@ -1,6 +1,7 @@
-﻿---
+---
 title: "Erwähnungen / Presse"
 description: "Platzhalter für externe Erwähnungen und Presselinks."
+translationKey: "mentions"
 weight: 50
 draft: true
 ---
