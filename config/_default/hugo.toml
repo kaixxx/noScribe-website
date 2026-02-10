@@ -76,6 +76,12 @@ enableRobotsTXT = false
     weight = 4
     title = "noScribe"
     contentDir = "content/es"
+  [languages.it]
+    languageName = "Italiano"
+    languageCode = "it-IT"
+    weight = 5
+    title = "noScribe"
+    contentDir = "content/it"
 
 [languages.de.params]
   siteDescription = "Offizielle Projektseite der Open-Source-Transkriptionssoftware noScribe – lokal, datenschutzfreundlich, ohne Cloud."
@@ -88,6 +94,9 @@ enableRobotsTXT = false
 
 [languages.es.params]
   siteDescription = "Sitio oficial del software de transcripción de código abierto noScribe – local, respetuoso con la privacidad, sin nube."
+
+[languages.it.params]
+  siteDescription = "Sito ufficiale del software di trascrizione open-source noScribe – locale, rispettoso della privacy, senza cloud."
 
 [languages.de.menu]
   [[languages.de.menu.before]]
@@ -110,5 +119,11 @@ enableRobotsTXT = false
 [languages.es.menu]
   [[languages.es.menu.before]]
     name = "Inicio"
+    pageRef = "/"
+    weight = 1
+
+[languages.it.menu]
+  [[languages.it.menu.before]]
+    name = "Inizio"
     pageRef = "/"
     weight = 1

@@ -13,6 +13,7 @@ bookToC: false
 {{< button href="/de/" >}}Deutsch{{< /button >}}
 {{< button href="/fr/" >}}Français{{< /button >}}
 {{< button href="/es/" >}}Español{{< /button >}}
+{{< button href="/it/" >}}Italiano{{< /button >}}
 
 Your browser language is used for an automatic redirect. 
 You can change language on every page later.
@@ -30,7 +31,8 @@ You can change language on every page later.
       en: "/en/",
       de: "/de/",
       fr: "/fr/",
-      es: "/es/"
+      es: "/es/",
+      it: "/it/"
     };
     var fallback = "/en/";
 
