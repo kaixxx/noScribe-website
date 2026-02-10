@@ -11,16 +11,16 @@ weight: 20
 
 {{< img src="img/noScribe_settings.png" alt="Paramètres de noScribe" style="width: 17em; height: auto; float: left; margin: 0 1.5rem 1rem 0;" >}}
 
-- **Choisir un fichier audio :** Presque tous les formats audio et vidéo sont pris en charge. Vous pouvez aussi sélectionner plusieurs fichiers ; ils seront alors traités les uns après les autres.
-- **Enregistrer la transcription en :** Par défaut `.html` (compatible avec l’éditeur). Optionnellement `.txt` pour du texte brut ou `.vtt` pour des sous‑titres et un travail ultérieur dans [EXMARaLDA](https://exmaralda.org/). Si plusieurs fichiers d’entrée sont traités d’un coup, seul le dossier de sortie peut être choisi. Les noms de fichiers de sortie sont alors générés automatiquement.
-- **Début/Fin :** Plage de temps au format `hh:mm:ss`, idéale pour tester des extraits plus courts.
+- **Fichier audio :** Presque tous les formats audio et vidéo sont pris en charge. Vous pouvez aussi sélectionner plusieurs fichiers ; ils seront alors traités les uns après les autres.
+- **Enregistrer la transcription sous :** Par défaut `.html` (compatible avec l’éditeur). Optionnellement `.txt` pour du texte brut ou `.vtt` pour des sous‑titres et un travail ultérieur dans [EXMARaLDA](https://exmaralda.org/). Si plusieurs fichiers d’entrée sont traités d’un coup, seul le dossier de sortie peut être choisi. Les noms de fichiers de sortie sont alors générés automatiquement.
+- **Début (hh:mm:ss) / Fin (hh:mm:ss) :** Plage de temps au format `hh:mm:ss`, idéale pour tester des extraits plus courts.
 - **Langue :** Sélectionnez une langue ou « Auto » pour la détection, ou « Multilingual » pour plusieurs langues dans le même enregistrement (expérimental).
-- **Qualité :** « Precise » donne les meilleurs résultats et est recommandé pour presque tous les usages. « Fast » est un peu plus rapide et est surtout destiné aux ordinateurs plus anciens. Cela nécessite plus de corrections.
+- **Modèle :** « Precise » donne les meilleurs résultats et est recommandé pour presque tous les usages. « Fast » est un peu plus rapide et est surtout destiné aux ordinateurs plus anciens. Cela nécessite plus de corrections.
 - **Marquer les pauses :** Si activé, les pauses sont marquées par des points entre crochets, un point par seconde de pause. Optionnel à partir de 1/2/3 secondes.
 - **Détection des locuteurs :** Si connue, sélectionnez le nombre de locuteurs pour rendre la détection plus robuste. Sinon choisissez « Auto » pour la détection automatique ou « None » pour ignorer complètement cette étape.
-- **Chevauchement de parole :** La parole simultanée est marquée par `// Locuteur : texte de l’interjection //` (expérimental).
-- **Disfluences :** Si activé, les mots de remplissage et les mots/phrases incomplètes sont transcrits quand c’est possible ; sinon ils ne le sont pas. Remarque : c’est plutôt une « recommandation » au modèle d’IA, pas un interrupteur strict.
-- **Horodatages :** Insère un horodatage au format `[hh:mm:ss]` toutes les 60 secondes ou lors des changements de locuteur (par ex. utile pour MAXQDA).
+- **Chevauchements de parole :** La parole simultanée est marquée par `// Locuteur : texte de l’interjection //` (expérimental).
+- **Mots de remplissage :** Si activé, les mots de remplissage et les mots/phrases incomplètes sont transcrits quand c’est possible ; sinon ils ne le sont pas. Remarque : c’est plutôt une « recommandation » au modèle d’IA, pas un interrupteur strict.
+- **Horodatage :** Insère un horodatage au format `[hh:mm:ss]` toutes les 60 secondes ou lors des changements de locuteur (par ex. utile pour MAXQDA).
 - **Démarrer** lance le processus de transcription. Si un processus est déjà en cours, vous pouvez tout de même en soumettre de nouveaux. Ils sont alors placés dans la [file d’attente](#queue) et traités à leur tour.
 
 <div style="clear: both;"></div>
@@ -29,7 +29,7 @@ weight: 20
 
 {{< img src="img/queue.png" alt="Vue de la file d’attente" >}}
 
-L’onglet « Queue » affiche la liste de tous les travaux de la session en cours, leur statut actuel et leur progression. Les travaux sont traités les uns après les autres.
+L’onglet « File d’attente » affiche la liste de tous les travaux de la session en cours, leur statut actuel et leur progression. Les travaux sont traités les uns après les autres.
 
 **Actions pour les travaux :**
 
@@ -37,7 +37,7 @@ L’onglet « Queue » affiche la liste de tous les travaux de la session en cou
 - `✔` ouvre le résultat dans l’éditeur (même s’il y a eu des erreurs, tant qu’une transcription incomplète existe).
 - `⟳` redémarre un travail (après erreurs/annulation).
 
-Le bouton « Cancel » en bas à droite arrête toute la file d’attente.
+Le bouton « Annuler » en bas à droite arrête toute la file d’attente.
 
 ## L’éditeur noScribe
 
