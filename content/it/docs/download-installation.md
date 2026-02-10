@@ -9,8 +9,8 @@ weight: 10
 
 **Versione corrente:** 0.7
 
-Tutti i file di installazione sono ospitati su SWITCHdrive.ch, una piattaforma sicura di condivisione dati per le universita svizzere.
-Il codice sorgente e disponibile su [GitHub](https://github.com/kaixxx/noScribe), anche per il [noScribe Editor](https://github.com/kaixxx/noScribeEditor).
+Tutti i file di installazione sono ospitati su SWITCHdrive.ch, una piattaforma sicura di condivisione dati per le università svizzere.
+Il codice sorgente è disponibile su [GitHub](https://github.com/kaixxx/noScribe), anche per il [noScribe Editor](https://github.com/kaixxx/noScribeEditor).
 
 {{< button href="#windows" >}}Installazione Windows{{< /button >}}
 {{< button href="#macos" >}}Installazione macOS{{< /button >}}
@@ -20,26 +20,26 @@ Il codice sorgente e disponibile su [GitHub](https://github.com/kaixxx/noScribe)
 
 ### Download
 
-Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere la versione standard. Se hai una scheda grafica NVIDIA (RTX 20XX o piu recente) con almeno 6 GB di VRAM, puoi beneficiare dell'accelerazione CUDA, che puo ridurre drasticamente i tempi di trascrizione.
+Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere la versione standard. Se hai una scheda grafica NVIDIA (RTX 20XX o più recente) con almeno 6 GB di VRAM, puoi beneficiare dell'accelerazione CUDA, che può ridurre drasticamente i tempi di trascrizione.
 
 - **Versione standard (senza GPU NVIDIA):**
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fnormal
 - **Versione CUDA (GPU NVIDIA, almeno 6 GB di VRAM):**
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fcuda
 
-  **Requisiti CUDA:** driver NVIDIA versione 570.65 o superiore, piu il toolkit CUDA:
+  **Requisiti CUDA:** driver NVIDIA versione 570.65 o superiore, più il toolkit CUDA:
   https://developer.nvidia.com/cuda-downloads?target_os=Windows
 
 ### Installazione
 
-1. Avvia l'installer (puo richiedere alcuni minuti).
-2. Se Windows avvisa di un "editore sconosciuto", scegli "Ulteriori informazioni > Esegui comunque". Purtroppo questo avviso e difficile da evitare per software gratuito.
-3. Se vuoi installare noScribe in modalita silenziosa su piu macchine: avvia il setup con `/S`.
+1. Avvia l'installer (può richiedere alcuni minuti).
+2. Se Windows avvisa di un "editore sconosciuto", scegli "Ulteriori informazioni > Esegui comunque". Purtroppo questo avviso è difficile da evitare per software gratuito.
+3. Se vuoi installare noScribe in modalità silenziosa su più macchine: avvia il setup con `/S`.
 
 ### Problemi noti (Windows)
 
-- Le schede RTX/GTX-1xxx spesso non sono piu supportate da CUDA: in questo caso usa la versione standard.
-- Se vedi l'errore "Transcription worker exited unexpectedly (code 3221226505)", puo aiutare forzare l'uso della CPU:
+- Le schede RTX/GTX-1xxx spesso non sono più supportate da CUDA: in questo caso usa la versione standard.
+- Se vedi l'errore "Transcription worker exited unexpectedly (code 3221226505)", può aiutare forzare l'uso della CPU:
   1. Chiudi noScribe.
   2. Apri il file `C:\Users\<USERNAME>\AppData\Local\noScribe\noScribe\config.yml`.
   3. Imposta `force_whisper_cpu` su `'True'` (mantieni le virgolette).
@@ -52,24 +52,24 @@ Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere 
 - Download:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FmacOS%2FApple%20Silicon
 - Apri il DMG e trascina **noScribe** e **noScribeEdit** nella cartella Applicazioni.
-- E necessario Rosetta 2 (per ffmpeg). Se non e gia installato:
+- È necessario Rosetta 2 (per ffmpeg). Se non è già installato:
   - Apri Terminale (`/Applications/Utilities/Terminal.app`)
   - Esegui `softwareupdate --install-rosetta` (o `--agree-to-license`)
 - Avvia le app dalla cartella Applicazioni.
 
 ### Mac Intel
 
-- La versione 0.7 non e attualmente disponibile per Mac Intel.
-- La versione 0.6 (Intel) e disponibile qui:
+- La versione 0.7 non è attualmente disponibile per Mac Intel.
+- La versione 0.6 (Intel) è disponibile qui:
   https://drive.switch.ch/index.php/apps/files/?dir=/noScribe/noScribe%20releases/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)&fileid=8266174681
 - Versioni precedenti:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
-Purtroppo non possiamo firmare correttamente i pacchetti per Mac Intel, quindi vedrai un avviso che indica che noScribe e noScribeEdit provengono da sviluppatori non identificati. Devi autorizzare manualmente l'esecuzione di entrambi i programmi se Gatekeeper e attivo. Segui questi passaggi:
+Purtroppo non possiamo firmare correttamente i pacchetti per Mac Intel, quindi vedrai un avviso che indica che noScribe e noScribeEdit provengono da sviluppatori non identificati. Devi autorizzare manualmente l'esecuzione di entrambi i programmi se Gatekeeper è attivo. Segui questi passaggi:
 - Fai doppio clic sul file DMG scaricato.
 - Trascina noScribe e noScribeEdit nel link della cartella Applicazioni (etichetta "drag both here to install").
 - Avvia noScribe facendo doppio clic sull'app nella cartella Applicazioni. Vedrai un errore che indica che noScribe proviene da uno sviluppatore non identificato. Fai lo stesso per il noScribe Editor.
-- Vai su Impostazioni -> Privacy e sicurezza -> scorri verso il basso fino a vedere un messaggio che indica che noScribe e stato bloccato e fai clic su "Apri comunque". Fai lo stesso per il noScribe Editor.
+- Vai su Impostazioni -> Privacy e sicurezza -> scorri verso il basso fino a vedere un messaggio che indica che noScribe è stato bloccato e fai clic su "Apri comunque". Fai lo stesso per il noScribe Editor.
 - Da quel momento, entrambe le app dovrebbero avviarsi senza problemi.
 
 ## Linux

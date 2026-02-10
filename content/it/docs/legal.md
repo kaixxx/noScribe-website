@@ -29,16 +29,16 @@ E-Mail: kai.droege@hslu.ch
 
 ### Hosting (GitHub Pages)
 
-Questo sito e fornito come sito statico tramite GitHub Pages. Quando accedi, gli indirizzi IP dei visitatori vengono registrati e memorizzati da GitHub per motivi di sicurezza. Il destinatario dei dati e il provider di hosting GitHub (GitHub, Inc.). La base giuridica e l'art. 6(1)(f) GDPR (legittimo interesse a un funzionamento sicuro e affidabile del sito web).
+Questo sito è fornito come sito statico tramite GitHub Pages. Quando accedi, gli indirizzi IP dei visitatori vengono registrati e memorizzati da GitHub per motivi di sicurezza. Il destinatario dei dati è il provider di hosting GitHub (GitHub, Inc.). La base giuridica è l'art. 6(1)(f) GDPR (legittimo interesse a un funzionamento sicuro e affidabile del sito web).
 
 ### Contatto
 
-Se mi contatti via email, i dati trasmessi saranno trattati per gestire la tua richiesta. La base giuridica e l'art. 6(1)(f) GDPR. I dati saranno cancellati una volta che la richiesta e stata gestita completamente e se non esistono obblighi legali di conservazione.
+Se mi contatti via email, i dati trasmessi saranno trattati per gestire la tua richiesta. La base giuridica è l'art. 6(1)(f) GDPR. I dati saranno cancellati una volta che la richiesta è stata gestita completamente e se non esistono obblighi legali di conservazione.
 
 ### Periodo di conservazione
 
-Salvo che sia indicato un periodo di conservazione piu specifico in questa informativa, i dati personali saranno cancellati non appena non saranno piu necessari per gli scopi indicati.
+Salvo che sia indicato un periodo di conservazione più specifico in questa informativa, i dati personali saranno cancellati non appena non saranno più necessari per gli scopi indicati.
 
 ### Diritti degli interessati
 
-Hai il diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilita dei dati e opposizione al trattamento dei tuoi dati personali. Hai anche il diritto di presentare un reclamo presso un'autorita di controllo sulla protezione dei dati.
+Hai il diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati e opposizione al trattamento dei tuoi dati personali. Hai anche il diritto di presentare un reclamo presso un'autorità di controllo sulla protezione dei dati.

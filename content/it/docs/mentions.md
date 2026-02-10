@@ -8,7 +8,7 @@ draft: true
 
 # Menzioni / Stampa
 
-Qui verra aggiunta una lista selezionata di menzioni pubbliche di noScribe. Per favore non aggiungere citazioni inventate.
+Qui verrà aggiunta una lista selezionata di menzioni pubbliche di noScribe. Per favore non aggiungere citazioni inventate.
 
 ## Voci previste (placeholders)
 
