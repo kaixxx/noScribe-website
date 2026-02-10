@@ -1,11 +1,11 @@
 ﻿---
-title: "noScribe – Interviews mit KI transkribieren"
+title: "noScribe – Interviews kostenlos mit KI transkribieren"
 description: "Offizielle Projektseite der Open-Source-Transkriptionssoftware noScribe (GPL-3.0) – lokal, datenschutzfreundlich, ohne Cloud."
 translationKey: "home"
 bookToC: true
 ---
 
-# noScribe – Interviews mit KI transkribieren
+# noScribe – Interviews kostenlos mit KI transkribieren
 
 Dies ist die offizielle Projektseite der Open-Source-Software noScribe ([GitHub](https://github.com/kaixxx/noScribe)). noScribe ist eine Desktop-App zur Transkription von Interviews und anderen sensiblen Audiodaten – datenschutzfreundlich, ohne Cloud, mit hochwertigen lokalen KI-Modellen.
 
