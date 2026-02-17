@@ -36,10 +36,13 @@ noScribe custom head
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{- $translations := .Translations | append . -}}
-{{- range $translations -}}
-  {{- if ne .Language.Lang "und" -}}
-    <link rel="alternate" hreflang="{{ default .Site.LanguageCode .Language.Lang }}" href="{{ .Permalink }}" title="{{ partial "docs/title" . }}">
+{{- $translations := .AllTranslations -}}
+{{- if not $translations -}}
+  {{- $translations = slice . -}}
+{{- end -}}
+{{- range $alt := $translations -}}
+  {{- if ne $alt.Language.Lang "und" -}}
+    <link rel="alternate" hreflang="{{ or $alt.Site.Language.LanguageCode $alt.Language.Lang }}" href="{{ $alt.Permalink }}" title="{{ partial "docs/title" $alt }}">
   {{- end -}}
 {{- end -}}
 

@@ -1,6 +1,6 @@
-﻿---
-title: "noScribe – Interviews kostenlos mit KI transkribieren"
-description: "Offizielle Projektseite der Open-Source-Transkriptionssoftware noScribe (GPL-3.0) – lokal, datenschutzfreundlich, ohne Cloud."
+---
+title: "noScribe - Offizielle Website | Interviews kostenlos mit KI transkribieren"
+description: "Offizielle Website von noScribe, der Open-Source-Transkriptionssoftware (GPL-3.0): lokal, datenschutzfreundlich, ohne Cloud."
 translationKey: "home"
 bookToC: true
 ---

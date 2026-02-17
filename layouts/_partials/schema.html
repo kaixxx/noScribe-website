@@ -1,73 +1,96 @@
-{{- $siteUrl := strings.TrimSuffix "/" .Site.BaseURL -}}
-{{- $pageUrl := .Permalink -}}
-{{- $title := partial "docs/html-head-title" . -}}
-{{- $description := or .Params.description .Description .Summary .Site.Params.siteDescription | plainify | htmlUnescape -}}
+{{- $siteConfig := .Site.Data.site.config -}}
+{{- $lang := .Language.Lang -}}
+{{- $siteUrl := strings.TrimSuffix "/" (or $siteConfig.brand.officialSiteBase .Site.BaseURL) -}}
 {{- $inLanguage := or .Site.Language.LanguageCode .Site.Language.Lang -}}
-{{- $authorName := .Site.Params.authorName | default "Kai Dröge" -}}
-{{- $authorUrl := .Site.Params.authorUrl -}}
-{{- $authorSameAs := .Site.Params.authorSameAs -}}
-{{- $codeRepository := .Site.Params.codeRepository -}}
-{{- $licenseUrl := .Site.Params.licenseUrl -}}
-
-{{- $personId := printf "%s/#person" $siteUrl -}}
-{{- $websiteId := printf "%s/#website" $siteUrl -}}
-{{- $softwareId := printf "%s/#software" $siteUrl -}}
-{{- $webpageId := printf "%s/#webpage" (strings.TrimSuffix "/" $pageUrl) -}}
-
-{{- $person := dict "@type" "Person" "@id" $personId "name" $authorName -}}
-{{- with $authorUrl -}}
-  {{- $person = merge $person (dict "url" .) -}}
-{{- end -}}
-{{- if $authorSameAs -}}
-  {{- $person = merge $person (dict "sameAs" $authorSameAs) -}}
+{{- $pageUrl := .Permalink -}}
+{{- $description := or .Params.description .Description .Summary .Site.Params.siteDescription | plainify | htmlUnescape -}}
+{{- $brand := .Site.Title -}}
+{{- with $siteConfig.brand.name -}}
+  {{- $brand = . -}}
 {{- end -}}
 
-{{- $website := dict
-  "@type" "WebSite"
-  "@id" $websiteId
-  "url" $siteUrl
-  "name" .Site.Title
-  "publisher" (dict "@id" $personId)
-  "inLanguage" $inLanguage
+{{- $repoUrl := or $siteConfig.identity.githubRepo .Site.Params.codeRepository -}}
+{{- $githubProfile := or $siteConfig.identity.githubProfile .Site.Params.authorUrl -}}
+{{- $sameAs := slice -}}
+{{- with $siteConfig.identity.sameAs -}}
+  {{- $sameAs = . -}}
+{{- else -}}
+  {{- with $repoUrl -}}
+    {{- $sameAs = $sameAs | append . -}}
+  {{- end -}}
+  {{- with $githubProfile -}}
+    {{- $sameAs = $sameAs | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $organizationId := printf "%s/#organization" $siteUrl -}}
+{{- $organization := dict
+  "@type" "Organization"
+  "@id" $organizationId
+  "name" (or $siteConfig.organization.name (printf "%s Project" $brand))
+  "url" (or $siteConfig.organization.url (printf "%s/" $siteUrl))
 -}}
-
-{{- $webpage := dict
-  "@type" "WebPage"
-  "@id" $webpageId
-  "url" $pageUrl
-  "name" $title
-  "isPartOf" (dict "@id" $websiteId)
-  "inLanguage" $inLanguage
--}}
-{{- if .IsHome -}}
-  {{- $webpage = merge $webpage (dict "mainEntity" (dict "@id" $softwareId)) -}}
+{{- with $siteConfig.organization.logo -}}
+  {{- $organization = merge $organization (dict "logo" (dict "@type" "ImageObject" "url" .)) -}}
+{{- end -}}
+{{- if gt (len $sameAs) 0 -}}
+  {{- $organization = merge $organization (dict "sameAs" $sameAs) -}}
 {{- end -}}
 
-{{- $software := dict
-  "@type" "SoftwareApplication"
-  "@id" $softwareId
-  "name" "noScribe"
-  "description" $description
-  "applicationCategory" "MultimediaApplication"
-  "operatingSystem" (slice "Windows" "macOS" "Linux")
-  "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "EUR" "availability" "https://schema.org/InStock")
-  "isAccessibleForFree" true
-  "author" (dict "@id" $personId)
-  "publisher" (dict "@id" $personId)
-  "url" $siteUrl
-  "inLanguage" $inLanguage
--}}
-{{- with $codeRepository -}}
-  {{- $software = merge $software (dict "codeRepository" .) -}}
-{{- end -}}
-{{- with $licenseUrl -}}
-  {{- $software = merge $software (dict "license" .) -}}
+{{- $graph := slice $organization -}}
+{{- $authorRef := dict "@id" $organizationId -}}
+{{- $personName := or $siteConfig.person.name .Site.Params.authorName -}}
+{{- if $personName -}}
+  {{- $personId := printf "%s/#person" $siteUrl -}}
+  {{- $person := dict "@type" "Person" "@id" $personId "name" $personName -}}
+  {{- with (or $siteConfig.person.url .Site.Params.authorUrl) -}}
+    {{- $person = merge $person (dict "url" .) -}}
+  {{- end -}}
+  {{- $personSameAs := .Site.Params.authorSameAs -}}
+  {{- if not $personSameAs -}}
+    {{- $personSameAs = $sameAs -}}
+  {{- end -}}
+  {{- if gt (len $personSameAs) 0 -}}
+    {{- $person = merge $person (dict "sameAs" $personSameAs) -}}
+  {{- end -}}
+  {{- $graph = $graph | append $person -}}
+  {{- $authorRef = dict "@id" $personId -}}
 {{- end -}}
 
-{{- $graph := slice $person $website $webpage -}}
-{{- if .IsHome -}}
+{{- if and .IsHome (ne $lang "und") -}}
+  {{- $offer := dict "@type" "Offer" "price" (or $siteConfig.software.price "0") -}}
+  {{- with $siteConfig.software.priceCurrency -}}
+    {{- $offer = merge $offer (dict "priceCurrency" .) -}}
+  {{- end -}}
+  {{- $software := dict
+    "@type" "SoftwareApplication"
+    "@id" (printf "%s/#software-%s" $siteUrl $lang)
+    "name" (or $siteConfig.software.name $brand)
+    "url" $pageUrl
+    "description" $description
+    "applicationCategory" (or $siteConfig.software.applicationCategory "MultimediaApplication")
+    "operatingSystem" (or $siteConfig.software.operatingSystem "Windows, macOS, Linux")
+    "offers" $offer
+    "isAccessibleForFree" true
+    "author" $authorRef
+    "publisher" (dict "@id" $organizationId)
+    "inLanguage" $inLanguage
+  -}}
+  {{- with $repoUrl -}}
+    {{- $software = merge $software (dict "codeRepository" .) -}}
+  {{- end -}}
+  {{- with .Site.Params.licenseUrl -}}
+    {{- $software = merge $software (dict "license" .) -}}
+  {{- end -}}
+  {{- if gt (len $sameAs) 0 -}}
+    {{- $software = merge $software (dict "sameAs" $sameAs) -}}
+  {{- end -}}
+  {{- with $siteConfig.software.documentationPath -}}
+    {{- $docUrl := printf "%s%s" $pageUrl (strings.TrimPrefix "/" .) -}}
+    {{- $software = merge $software (dict "softwareHelp" (dict "@type" "CreativeWork" "url" $docUrl)) -}}
+  {{- end -}}
   {{- $graph = $graph | append $software -}}
 {{- end -}}
-{{- $data := dict "@context" "https://schema.org" "@graph" $graph -}}
-{{- $json := $data | jsonify (dict "noHTMLEscape" true) -}}
+
+{{- $json := (dict "@context" "https://schema.org" "@graph" $graph) | jsonify (dict "noHTMLEscape" true) -}}
 <script type="application/ld+json">{{ $json | safeJS }}</script>

@@ -1,0 +1,9 @@
+{{- if and .IsHome (ne .Language.Lang "und") -}}
+  {{- with partial "docs/title" . -}}
+    {{- . -}}
+  {{- else -}}
+    {{- .Site.Title -}}
+  {{- end -}}
+{{- else -}}
+  {{- with partial "docs/title" . -}}{{ . }} | {{ end }}{{ .Site.Title -}}
+{{- end -}}

@@ -1,6 +1,6 @@
 ---
-title: "noScribe – Transcription d’interviews gratuite avec l’IA"
-description: "Site officiel du logiciel open source de transcription noScribe (GPL-3.0) – local, respectueux de la vie privée, sans cloud."
+title: "noScribe - Site officiel | Transcription d'interviews gratuite avec l'IA"
+description: "Site officiel de noScribe, le logiciel open source de transcription (GPL-3.0): local, respectueux de la vie privée, sans cloud."
 translationKey: "home"
 bookToC: true
 ---

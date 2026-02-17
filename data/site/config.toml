@@ -1,0 +1,31 @@
+[brand]
+name = "noScribe"
+officialSiteBase = "https://noscribe.de"
+primaryLanguage = "de"
+secondaryLanguage = "en"
+
+[identity]
+githubRepo = "https://github.com/kaixxx/noScribe"
+githubProfile = "https://github.com/kaixxx"
+# TODO: Add more sameAs links only if they are verified official identities.
+sameAs = [
+  "https://github.com/kaixxx/noScribe",
+  "https://github.com/kaixxx",
+]
+
+[organization]
+name = "noScribe Project"
+url = "https://noscribe.de/"
+logo = "https://noscribe.de/img/noScribeLogo.png"
+
+[person]
+name = "Dr. Kai Droege"
+url = "https://github.com/kaixxx"
+
+[software]
+name = "noScribe"
+applicationCategory = "MultimediaApplication"
+operatingSystem = "Windows, macOS, Linux"
+documentationPath = "/docs/usage/"
+price = "0"
+priceCurrency = "EUR"
