@@ -25,7 +25,7 @@ Waarschuwing: iemand probeert betaalde transcriptiediensten te verkopen via het 
 Oorspronkelijk ontwikkeld voor kwalitatief sociaal onderzoek, wordt noScribe nu gebruikt overal waar bijzonder gevoelige audio wordt verwerkt - in de journalistiek, de geneeskunde, bedrijven, overheidsinstanties en NGO's. noScribe wordt aanbevolen door [universiteiten](https://guides.library.georgetown.edu/c.php?g=1201872&p=10177079), [onderzoeksplatforms](https://ai4culture.eu/resources/tools/172), het [Duitse computertijdschrift c't](https://www.heise.de/select/ct/2025/2/2433207582191637980), en in [vakpublicaties voor journalisten](https://www.journalistin.at/singlenews/uid-968002/nie-wieder-abtippen-profitipps-zum-transkribieren-mit-ki/).
 
 {{< img src="img/noScribe_main_window.png" alt="noScribe hoofdvenster" loading="eager" fetchpriority="high" >}}
-(De screenshot toont een [interview met de Russische sociologe Natalia Savelyeva in ballingschap](https://www.youtube.com/watch?v=vOwajAbvPzQ&t=2018s) dat ik in mei 2022 heb afgenomen.)
+(Het screenshot toont een [interview met de Russische sociologe Natalia Savelyeva in ballingschap](https://www.youtube.com/watch?v=vOwajAbvPzQ&t=2018s) dat ik in mei 2022 heb afgenomen.)
 
 ## Hoe gebruik ik noScribe?
 

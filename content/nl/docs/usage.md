@@ -64,7 +64,7 @@ AI-gestuurde spraakherkenning heeft de laatste jaren enorme stappen gezet. Toch 
 - Niet-verbale uitingen zoals lachen, zuchten, enz. worden niet vastgelegd en moeten handmatig worden toegevoegd.
 - Gelijktijdige spraak en zeer dichte interactieve passages, bijvoorbeeld in groepsdiscussies, zijn uitdagend voor het AI-model. Inhoud kan verloren gaan of aan de verkeerde personen worden toegewezen.
 - Soms worden meer sprekers gedetecteerd dan er daadwerkelijk waren. In dat geval helpt het om het juiste aantal vooraf in "Sprekerdetectie" in te stellen.
-- Ongebruikelijke namen van personen of organisaties, slang of woorden uit andere talen worden vaak verkeerd gespeld, soms bijna fonetisch. Zoeken en vervangen in de noScribe Editor kan helpen.
+- Ongebruikelijke namen van personen of organisaties, jargon of woorden uit andere talen worden vaak verkeerd gespeld, soms bijna fonetisch. Zoeken en vervangen in de noScribe Editor kan helpen.
 - Net als andere taalmodellen kan het Whisper-model hier soms "hallucineren" en woorden of zinnen toevoegen die plausibel klinken maar niet zijn uitgesproken - zie deze [studie van Cornell University](https://facctconference.org/static/papers24/facct24-111.pdf) over het onderwerp.
 - Zelden kunnen er oneindig herhalende tekstlussen optreden, vergelijkbaar met een defecte plaat. In dat geval: transcribeer kortere stukken met een lichte overlap en voeg ze handmatig samen.
 - Een mix van meerdere talen in dezelfde opname kan ertoe leiden dat het AI-model vertaalt in plaats van letterlijk te transcriberen.
