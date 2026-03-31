@@ -13,6 +13,7 @@
 {{- if $imagePath -}}
   {{- $image = $imagePath | absURL -}}
 {{- end -}}
+{{- $ogLocale := or .Site.Params.ogLocale (replace (or .Site.Language.LanguageCode .Site.Language.Lang) "-" "_") -}}
 {{- $imageWidth := "" -}}
 {{- $imageHeight := "" -}}
 {{- if and $imagePath (not (urls.Parse $imagePath).Host) -}}
@@ -30,10 +31,10 @@
 <meta property="og:url" content="{{ $url }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 {{- if ne .Language.Lang "und" -}}
-  <meta property="og:locale" content="{{ or .Site.Language.LanguageCode .Site.Language.Lang }}">
+  <meta property="og:locale" content="{{ $ogLocale }}">
   {{- $translations := .Translations -}}
   {{- range $translations -}}
-    <meta property="og:locale:alternate" content="{{ or .Language.LanguageCode .Language.Lang }}">
+    <meta property="og:locale:alternate" content="{{ or .Site.Params.ogLocale (replace (or .Language.LanguageCode .Language.Lang) "-" "_") }}">
   {{- end -}}
 {{- end -}}
 {{- if $image -}}

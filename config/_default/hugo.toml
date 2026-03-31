@@ -6,7 +6,7 @@ defaultContentLanguage = "und"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
 
-languageCode = "en-US"
+languageCode = "en"
 
 title = "noScribe"
 
@@ -54,57 +54,63 @@ enableRobotsTXT = false
     contentDir = "content/und"
   [languages.de]
     languageName = "Deutsch"
-    languageCode = "de-DE"
+    languageCode = "de"
     weight = 2
     title = "noScribe"
     contentDir = "content/de"
   [languages.en]
     languageName = "English"
-    languageCode = "en-US"
+    languageCode = "en"
     weight = 1
     title = "noScribe"
     contentDir = "content/en"
   [languages.fr]
     languageName = "Français"
-    languageCode = "fr-FR"
+    languageCode = "fr"
     weight = 3
     title = "noScribe"
     contentDir = "content/fr"
   [languages.es]
     languageName = "Español"
-    languageCode = "es-ES"
+    languageCode = "es"
     weight = 4
     title = "noScribe"
     contentDir = "content/es"
   [languages.it]
     languageName = "Italiano"
-    languageCode = "it-IT"
+    languageCode = "it"
     weight = 5
     title = "noScribe"
     contentDir = "content/it"
   [languages.nl]
     languageName = "Nederlands"
-    languageCode = "nl-NL"
+    languageCode = "nl"
     weight = 6
     title = "noScribe"
     contentDir = "content/nl"
 
 [languages.de.params]
+  ogLocale = "de_DE"
   siteDescription = "Offizielle Projektseite der Open-Source-Transkriptionssoftware noScribe – lokal, datenschutzfreundlich, ohne Cloud."
 
 [languages.en.params]
+  ogLocale = "en_US"
   siteDescription = "Official project site of the open-source transcription software noScribe – local, privacy-friendly, no cloud."
 
 [languages.fr.params]
+  ogLocale = "fr_FR"
   siteDescription = "Site officiel du logiciel open source de transcription noScribe – local, respectueux de la vie privée, sans cloud."
 
 [languages.es.params]
+  ogLocale = "es_ES"
   siteDescription = "Sitio oficial del software de transcripción de código abierto noScribe – local, respetuoso con la privacidad, sin nube."
 
 [languages.it.params]
+  ogLocale = "it_IT"
   siteDescription = "Sito ufficiale del software di trascrizione open-source noScribe – locale, rispettoso della privacy, senza cloud."
 
 [languages.nl.params]
+  ogLocale = "nl_NL"
   siteDescription = "Officiele projectsite van de open-source transcriptiesoftware noScribe – lokaal, privacyvriendelijk, zonder cloud."
 
 [languages.de.menu]
