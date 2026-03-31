@@ -61,7 +61,7 @@ Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere 
 
 - La versione 0.7 non è attualmente disponibile per Mac Intel.
 - La versione 0.6 (Intel) è disponibile qui:
-  https://drive.switch.ch/index.php/apps/files/?dir=/noScribe/noScribe%20releases/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)&fileid=8266174681
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FmacOS%2Fx86_64%20(Intel)
 - Versioni precedenti:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
