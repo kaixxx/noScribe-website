@@ -114,6 +114,17 @@ source venv/bin/activate
 pip install -r environments/requirements_linux.txt
 pip install -r noScribeEdit/environments/requirements.txt
 
+# Asegurate de que Git LFS (Large File Support) este instalado. Es necesario para descargar los modelos desde Hugging Face.
+# Debian/Ubuntu:
+sudo apt install git-lfs
+# Fedora:
+# sudo dnf install git-lfs
+# Arch:
+# sudo pacman -S git-lfs
+# openSUSE:
+# sudo zypper install git-lfs
+git lfs install
+
 # Models
 rm -rf models/fast
 rm -rf models/precise
