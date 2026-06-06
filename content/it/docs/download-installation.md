@@ -47,8 +47,9 @@ Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere 
 
 ## macOS
 
-### Apple Silicon (M1-M4, macOS 14+)
+### Apple Silicon (M1-M4)
 
+- noScribe richiede almeno macOS 14 (Sonoma).
 - Download:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FmacOS%2FApple%20Silicon
 - Apri il DMG e trascina **noScribe** e **noScribeEdit** nella cartella Applicazioni.
