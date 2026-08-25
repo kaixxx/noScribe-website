@@ -23,9 +23,9 @@ The source code is available on [GitHub](https://github.com/kaixxx/noScribe), al
 Two versions are available. Most users should choose the standard version. If you have an NVIDIA graphics card (RTX 20XX or newer) with at least 6 GB VRAM, you can benefit from CUDA acceleration, which can drastically reduce transcription time.
 
 - **Standard version (no NVIDIA-GPU):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fnormal
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/normal
 - **CUDA version (NVIDIA-GPU, at least 6 GB VRAM):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fcuda
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/cuda
 
   **CUDA requirements:** NVIDIA driver version 570.65 or newer, plus the CUDA toolkit:
   https://developer.nvidia.com/cuda-downloads?target_os=Windows
@@ -51,7 +51,7 @@ Two versions are available. Most users should choose the standard version. If yo
 
 - noScribe needs at least macOS 14 (Sonoma) to run.
 - Download:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FmacOS%2FApple%20Silicon
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/macOS/Apple%20Silicon
 - Open the DMG and drag **noScribe** and **noScribeEdit** into the Applications folder.
 - Rosetta 2 is required (for ffmpeg). If it is not already installed:
   - Open Terminal (`/Applications/Utilities/Terminal.app`)
@@ -62,7 +62,7 @@ Two versions are available. Most users should choose the standard version. If yo
 
 - Version 0.7 is currently not available for Intel Macs.
 - Version 0.6 (Intel) is available here:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FmacOS%2Fx86_64%20(Intel)
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)
 - Older versions:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
@@ -78,9 +78,9 @@ Unfortunately we cannot sign the packages correctly for Intel Macs, so you will 
 ### Executable Version
 
 - Download (CUDA or CPU):
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FLinux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Linux
 - If 0.7 does not run, use version 0.6.2:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FLinux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/Linux
 
 Installation:
 

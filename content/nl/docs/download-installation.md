@@ -23,9 +23,9 @@ De broncode is beschikbaar op [GitHub](https://github.com/kaixxx/noScribe), ook 
 Er zijn twee versies beschikbaar. De meeste gebruikers zouden de standaardversie moeten kiezen. Als je een NVIDIA-grafische kaart (RTX 20XX of nieuwer) hebt met minimaal 6 GB VRAM, kun je profiteren van CUDA-versnelling, wat de transcriptietijd sterk kan verkorten.
 
 - **Standaardversie (zonder NVIDIA-GPU):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fnormal
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/normal
 - **CUDA-versie (NVIDIA-GPU, minimaal 6 GB VRAM):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fcuda
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/cuda
 
   **CUDA-vereisten:** NVIDIA-driver versie 570.65 of nieuwer, plus de CUDA toolkit:
   https://developer.nvidia.com/cuda-downloads?target_os=Windows
@@ -51,7 +51,7 @@ Er zijn twee versies beschikbaar. De meeste gebruikers zouden de standaardversie
 
 - noScribe heeft minimaal macOS 14 (Sonoma) nodig.
 - Download:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FmacOS%2FApple%20Silicon
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/macOS/Apple%20Silicon
 - Open de DMG en sleep **noScribe** en **noScribeEdit** naar de map Programma's.
 - Rosetta 2 is vereist (voor ffmpeg). Als het nog niet is geïnstalleerd:
   - Open Terminal (`/Applications/Utilities/Terminal.app`)
@@ -62,7 +62,7 @@ Er zijn twee versies beschikbaar. De meeste gebruikers zouden de standaardversie
 
 - Versie 0.7 is momenteel niet beschikbaar voor Intel Macs.
 - Versie 0.6 (Intel) is hier beschikbaar:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FmacOS%2Fx86_64%20(Intel)
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)
 - Oudere versies:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
@@ -78,9 +78,9 @@ Helaas kunnen we de pakketten voor Intel Macs niet correct ondertekenen, waardoo
 ### Uitvoerbare versie
 
 - Download (CUDA of CPU):
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FLinux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Linux
 - Als 0.7 niet werkt, gebruik versie 0.6.2:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FLinux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/Linux
 
 Installatie:
 

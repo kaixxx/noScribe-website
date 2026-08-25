@@ -23,9 +23,9 @@ Il codice sorgente è disponibile su [GitHub](https://github.com/kaixxx/noScribe
 Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere la versione standard. Se hai una scheda grafica NVIDIA (RTX 20XX o più recente) con almeno 6 GB di VRAM, puoi beneficiare dell'accelerazione CUDA, che può ridurre drasticamente i tempi di trascrizione.
 
 - **Versione standard (senza GPU NVIDIA):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fnormal
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/normal
 - **Versione CUDA (GPU NVIDIA, almeno 6 GB di VRAM):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FWindows%2Fcuda
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/cuda
 
   **Requisiti CUDA:** driver NVIDIA versione 570.65 o superiore, più il toolkit CUDA:
   https://developer.nvidia.com/cuda-downloads?target_os=Windows
@@ -51,7 +51,7 @@ Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere 
 
 - noScribe richiede almeno macOS 14 (Sonoma).
 - Download:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FmacOS%2FApple%20Silicon
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/macOS/Apple%20Silicon
 - Apri il DMG e trascina **noScribe** e **noScribeEdit** nella cartella Applicazioni.
 - È necessario Rosetta 2 (per ffmpeg). Se non è già installato:
   - Apri Terminale (`/Applications/Utilities/Terminal.app`)
@@ -62,7 +62,7 @@ Sono disponibili due versioni. La maggior parte degli utenti dovrebbe scegliere 
 
 - La versione 0.7 non è attualmente disponibile per Mac Intel.
 - La versione 0.6 (Intel) è disponibile qui:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FmacOS%2Fx86_64%20(Intel)
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)
 - Versioni precedenti:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
@@ -78,9 +78,9 @@ Purtroppo non possiamo firmare correttamente i pacchetti per Mac Intel, quindi v
 ### Versione eseguibile
 
 - Download (CUDA o CPU):
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.7%2FLinux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Linux
 - Se la 0.7 non funziona, usa la versione 0.6.2:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?path=%2FnoScribe%20vers.%200.6%2FLinux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/Linux
 
 Installazione:
 
