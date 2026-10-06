@@ -7,7 +7,7 @@ weight: 10
 
 # Descarga e instalación
 
-**Versión actual:** 0.7
+**Versión actual:** 0.8
 
 Todos los archivos de instalación están alojados en SWITCHdrive.ch, una plataforma segura de intercambio de datos para universidades suizas.
 El código fuente está disponible en [GitHub](https://github.com/kaixxx/noScribe), también para el [noScribe Editor](https://github.com/kaixxx/noScribeEditor).
@@ -23,9 +23,9 @@ El código fuente está disponible en [GitHub](https://github.com/kaixxx/noScrib
 Hay dos versiones disponibles. La mayoría de usuarios debería elegir la versión estándar. Si tienes una tarjeta gráfica NVIDIA (RTX 20XX o más reciente) con al menos 6 GB de VRAM, puedes beneficiarte de la aceleración CUDA, que puede reducir drásticamente el tiempo de transcripción.
 
 - **Versión estándar (sin GPU NVIDIA):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/normal
+  https://drive.switch.ch/index.php/s/KLcsdKDygXaQdXp
 - **Versión CUDA (GPU NVIDIA, al menos 6 GB de VRAM):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/cuda
+  https://drive.switch.ch/index.php/s/sEd9ks6yCqQ3xEr
 
   **Requisitos de CUDA:** controlador NVIDIA versión 570.65 o superior, además del kit de desarrollo CUDA:
   https://developer.nvidia.com/cuda-downloads?target_os=Windows
@@ -47,26 +47,23 @@ Hay dos versiones disponibles. La mayoría de usuarios debería elegir la versi�
 
 ## macOS
 
-### Apple Silicon (M1-M4)
+### Apple Silicon (serie M)
 
 - noScribe necesita al menos macOS 14 (Sonoma).
 - Descarga:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/macOS/Apple%20Silicon
+  https://drive.switch.ch/index.php/s/otF4MedAW6ymY4R
 - Abre el DMG y arrastra **noScribe** y **noScribeEdit** a la carpeta Aplicaciones.
-- Se requiere Rosetta 2 (para ffmpeg). Si no está instalada:
-  - Abre Terminal (`/Applications/Utilities/Terminal.app`)
-  - Ejecuta `softwareupdate --install-rosetta` (o `--agree-to-license`)
 - Inicia las apps desde la carpeta Aplicaciones.
 
 ### Mac Intel
 
-- La versión 0.7 no está disponible actualmente para Mac Intel.
-- La versión 0.6 (Intel) está disponible aquí:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)
+- Debido a incompatibilidades en los paquetes de los que depende noScribe, las versiones más recientes ya no están disponibles para Mac Intel.
+- La última versión con una compilación oficial para Intel es la 0.6: https://drive.switch.ch/index.php/s/YWE6RQJPbJ9QNHF
 - Versiones anteriores:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
-Desafortunadamente no podemos firmar correctamente los paquetes para Mac Intel, por lo que verás una advertencia indicando que noScribe y noScribeEdit provienen de desarrolladores no identificados. Debes autorizar manualmente la ejecución de ambos programas si Gatekeeper está activado. Sigue estos pasos:
+Como no podemos firmar los paquetes para Mac Intel, verás una advertencia indicando que noScribe y noScribeEdit provienen de desarrolladores no identificados. Debes autorizar manualmente la ejecución de ambos programas si Gatekeeper está activado. Sigue estos pasos:
+
 - Haz doble clic en el archivo DMG descargado.
 - Arrastra noScribe y noScribeEdit al enlace de tu carpeta Aplicaciones (etiquetado «drag both here to install»).
 - Inicia noScribe haciendo doble clic en la app en tu carpeta Aplicaciones. Verás un error indicando que noScribe proviene de un desarrollador no identificado. Haz lo mismo con el noScribe Editor.
@@ -77,10 +74,11 @@ Desafortunadamente no podemos firmar correctamente los paquetes para Mac Intel, 
 
 ### Versión ejecutable
 
-- Descarga (CUDA o CPU):
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Linux
+- Aún no hay binarios de Linux disponibles para la versión 0.8. Usa la versión 0.7 o sigue las instrucciones de instalación manual que aparecen más abajo.
+- Descarga de la versión 0.7 (CUDA o CPU):
+  https://drive.switch.ch/index.php/s/GCmryRkjpeX8Yxp
 - Si la 0.7 no funciona, usa la versión 0.6.2:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/Linux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
 Instalación:
 
