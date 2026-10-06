@@ -7,7 +7,7 @@ weight: 10
 
 # Download and Installation
 
-**Current version:** 0.7
+**Current version:** 0.8
 
 All installation files are hosted on SWITCHdrive.ch, a secure data-sharing platform for Swiss universities.
 The source code is available on [GitHub](https://github.com/kaixxx/noScribe), also for the [noScribe Editor](https://github.com/kaixxx/noScribeEditor).
@@ -23,9 +23,9 @@ The source code is available on [GitHub](https://github.com/kaixxx/noScribe), al
 Two versions are available. Most users should choose the standard version. If you have an NVIDIA graphics card (RTX 20XX or newer) with at least 6 GB VRAM, you can benefit from CUDA acceleration, which can drastically reduce transcription time.
 
 - **Standard version (no NVIDIA-GPU):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/normal
+  https://drive.switch.ch/index.php/s/KLcsdKDygXaQdXp
 - **CUDA version (NVIDIA-GPU, at least 6 GB VRAM):**
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Windows/cuda
+  https://drive.switch.ch/index.php/s/sEd9ks6yCqQ3xEr
 
   **CUDA requirements:** NVIDIA driver version 570.65 or newer, plus the CUDA toolkit:
   https://developer.nvidia.com/cuda-downloads?target_os=Windows
@@ -47,26 +47,22 @@ Two versions are available. Most users should choose the standard version. If yo
 
 ## macOS
 
-### Apple Silicon (M1-M4)
+### Apple Silicon (M-series)
 
 - noScribe needs at least macOS 14 (Sonoma) to run.
-- Download:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/macOS/Apple%20Silicon
+- Download: https://drive.switch.ch/index.php/s/otF4MedAW6ymY4R
 - Open the DMG and drag **noScribe** and **noScribeEdit** into the Applications folder.
-- Rosetta 2 is required (for ffmpeg). If it is not already installed:
-  - Open Terminal (`/Applications/Utilities/Terminal.app`)
-  - Run `softwareupdate --install-rosetta` (or `--agree-to-license`)
 - Start the apps from the Applications folder.
 
 ### Intel Macs
 
-- Version 0.7 is currently not available for Intel Macs.
-- Version 0.6 (Intel) is available here:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/macOS/x86_64%20(Intel)
+- Due to incompatibilities in the packages noScribe depends on, the latest versions are no longer available for Intel Macs.
+- The last version with an official Intel build is 0.6: https://drive.switch.ch/index.php/s/YWE6RQJPbJ9QNHF
 - Older versions:
   https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
-Unfortunately we cannot sign the packages correctly for Intel Macs, so you will see a warning that noScribe and noScribeEdit come from unidentified developers. You must manually allow both programs to run if your Gatekeeper is enabled. Follow these steps:
+Because we cannot sign the packages for Intel Macs, you will see a warning that noScribe and noScribeEdit come from unidentified developers. You must manually allow both programs to run if Gatekeeper is enabled. Follow these steps:
+
 - Double-click the downloaded DMG file.
 - Drag noScribe and noScribeEdit into the link to your Applications folder (labeled "drag both here to install").
 - Start noScribe by double-clicking the app in your Applications folder. You will get an error that noScribe is from an unidentified developer. Do the same for noScribe Editor.
@@ -77,10 +73,11 @@ Unfortunately we cannot sign the packages correctly for Intel Macs, so you will 
 
 ### Executable Version
 
-- Download (CUDA or CPU):
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.7/Linux
+- Linux binaries are not yet available for version 0.8. Use version 0.7 or follow the manual installation instructions below.
+- Download 0.7 (CUDA or CPU):
+  https://drive.switch.ch/index.php/s/GCmryRkjpeX8Yxp
 - If 0.7 does not run, use version 0.6.2:
-  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j?dir=/noScribe%20vers.%200.6/Linux
+  https://drive.switch.ch/index.php/s/EIVup04qkSHb54j
 
 Installation:
 
