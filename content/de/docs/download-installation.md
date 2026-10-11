@@ -97,41 +97,57 @@ https://github.com/kaixxx/noScribe/discussions/83
 
 Kurzüberblick:
 
+Die folgenden Befehle sind für Debian/Ubuntu gedacht und setzen Python 3.11 oder 3.12 voraus.
+
 ```bash
+# Bei jedem Fehler abbrechen
+set -e
+
+# Systemabhängigkeiten
+sudo apt update
+sudo apt install git python3 python3-venv python3-pip python3-tk
+
+# Prüfen, dass Python 3.11 oder 3.12 verwendet wird
+python3 --version
+
+# Quellcode
 git clone https://github.com/kaixxx/noScribe.git
 cd noScribe
 
-# noScribeEdit
+# Den Editor-Platzhalter im frisch geklonten Repository ersetzen
 rm -rf noScribeEdit/
 git clone https://github.com/kaixxx/noScribeEditor.git noScribeEdit
 
-# Python‑Umgebung
-python3 -m venv venv
-source venv/bin/activate
+# Python-Umgebung
+python3 -m venv noscribe
+source noscribe/bin/activate
+python -m pip install --upgrade pip
 
-# Abhängigkeiten
-pip install -r environments/requirements_linux.txt
-pip install -r noScribeEdit/environments/requirements.txt
+# Die Abhängigkeiten beider Anwendungen gemeinsam auflösen
+python -m pip install \
+    -r environments/requirements_linux.txt \
+    -r noScribeEdit/environments/requirements.txt \
+    huggingface_hub
+python -m pip check
 
-# Stelle sicher, dass Git LFS (Large File Support) installiert ist. Es wird benötigt, um die Modelle von Hugging Face herunterzuladen.
-# Debian/Ubuntu:
-sudo apt install git-lfs
-# Fedora:
-# sudo dnf install git-lfs
-# Arch:
-# sudo pacman -S git-lfs
-# openSUSE:
-# sudo zypper install git-lfs
-git lfs install
+# Das schnelle Modell herunterladen
+hf download mukowaty/faster-whisper-int8 \
+    --include "faster-whisper-large-v3-turbo-int8/*" \
+    --local-dir model-downloads
 
-# Modelle
-rm -rf models/fast
-rm -rf models/precise
-git clone https://huggingface.co/mukowaty/faster-whisper-int8 models/fast
-git clone https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo models/precise
+mkdir -p models/fast
+cp -a model-downloads/faster-whisper-large-v3-turbo-int8/. models/fast/
 
-# Start
-python3 ./noScribe.py
+# Präzises Modell
+hf download dropbox-dash/faster-whisper-large-v3-turbo \
+    --local-dir models/precise
+
+# Prüfen, dass die Gewichte beider Modelle vorhanden sind
+test -s models/fast/model.bin
+test -s models/precise/model.bin
+
+# Aus dem Stammverzeichnis des Repositorys starten
+python -m noScribe
 ```
 
 ## Alte Versionen

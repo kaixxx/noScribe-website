@@ -96,41 +96,57 @@ https://github.com/kaixxx/noScribe/discussions/83
 
 Quick overview:
 
+The following commands are intended for Debian/Ubuntu and require Python 3.11 or 3.12.
+
 ```bash
+# Stop on any error
+set -e
+
+# System dependencies
+sudo apt update
+sudo apt install git python3 python3-venv python3-pip python3-tk
+
+# Check that this is Python 3.11 or 3.12
+python3 --version
+
+# Source
 git clone https://github.com/kaixxx/noScribe.git
 cd noScribe
 
-# noScribeEdit
+# Replace the editor placeholder in this fresh checkout
 rm -rf noScribeEdit/
 git clone https://github.com/kaixxx/noScribeEditor.git noScribeEdit
 
 # Python environment
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv noscribe
+source noscribe/bin/activate
+python -m pip install --upgrade pip
 
-# Dependencies
-pip install -r environments/requirements_linux.txt
-pip install -r noScribeEdit/environments/requirements.txt
+# Resolve both applications' dependencies together
+python -m pip install \
+    -r environments/requirements_linux.txt \
+    -r noScribeEdit/environments/requirements.txt \
+    huggingface_hub
+python -m pip check
 
-# Make sure Git LFS (Large File Support) is installed. It is required to download the models from Hugging Face.
-# Debian/Ubuntu:
-sudo apt install git-lfs
-# Fedora:
-# sudo dnf install git-lfs
-# Arch:
-# sudo pacman -S git-lfs
-# openSUSE:
-# sudo zypper install git-lfs
-git lfs install
+# Download the fast model
+hf download mukowaty/faster-whisper-int8 \
+    --include "faster-whisper-large-v3-turbo-int8/*" \
+    --local-dir model-downloads
 
-# Models
-rm -rf models/fast
-rm -rf models/precise
-git clone https://huggingface.co/mukowaty/faster-whisper-int8 models/fast
-git clone https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo models/precise
+mkdir -p models/fast
+cp -a model-downloads/faster-whisper-large-v3-turbo-int8/. models/fast/
 
-# Start
-python3 ./noScribe.py
+# Precise model
+hf download dropbox-dash/faster-whisper-large-v3-turbo \
+    --local-dir models/precise
+
+# Confirm both model weights are present
+test -s models/fast/model.bin
+test -s models/precise/model.bin
+
+# Start from the repository root
+python -m noScribe
 ```
 
 ## Old Versions
